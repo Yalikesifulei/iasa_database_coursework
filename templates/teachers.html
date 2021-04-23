@@ -1,0 +1,48 @@
+
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Untitled Document</title>
+    </head>
+    <body>
+        <table>
+            <thead>
+            <tr>
+				<th>chair_id</th>
+				<th>child_count</th>
+				<th>is_studying</th>
+				<th>name</th>
+				<th>phd_date</th>
+				<th>phd_topic</th>
+				<th>prof_date</th>
+				<th>prof_topic</th>
+				<th>salary</th>
+				<th>sex</th>
+				<th>teacher_id</th>
+				<th>title</th>
+
+        </tr>
+            </thead>
+            <tbody>
+                {%for row in results%}
+                    <tr>
+						<td>{{row[0]}}</td>
+						<td>{{row[1]}}</td>
+						<td>{{row[2]}}</td>
+						<td>{{row[3]}}</td>
+						<td>{{row[4]}}</td>
+						<td>{{row[5]}}</td>
+						<td>{{row[6]}}</td>
+						<td>{{row[7]}}</td>
+						<td>{{row[8]}}</td>
+						<td>{{row[9]}}</td>
+						<td>{{row[10]}}</td>
+						<td>{{row[11]}}</td>
+
+                    </tr>
+                {%endfor%}
+            </tbody>
+        </table>
+    </body>
+</html> 
