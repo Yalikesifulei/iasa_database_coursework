@@ -1,27 +1,26 @@
 <!doctype html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>Untitled Document</title>
-    </head>
-    <body>
-        <table>
-            <thead>
-            <tr>
-                <th>faculty_id</th>
-                <th>faculty_name</th>
-                <th>headmaster_id</th>
-            </tr>
-            </thead>
-            <tbody>
-                {%for row in results%}
-                    <tr>
-                        <td>{{row[0]}}</td>
-                        <td>{{row[1]}}</td>
-                        <td>{{row[2]}}</td>
-                    </tr>
-                {%endfor%}
-            </tbody>
-        </table>
-    </body>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Index</title>
+  </head>
+  <body>
+      <center>
+        <h1>Оберіть таблицю</h1>
+        <a class="btn btn-outline-primary" href="{{ url_for('chairs') }}" role="button">chairs</a>
+        <a class="btn btn-outline-primary" href="{{ url_for('faculties') }}" role="button">faculties</a>
+        <a class="btn btn-outline-primary" href="{{ url_for('groups') }}" role="button">groups</a>
+        <a class="btn btn-outline-primary" href="{{ url_for('session') }}" role="button">session</a>
+        <div style="line-height:40%;">
+            <br>
+        </div>
+        <a class="btn btn-outline-primary" href="{{ url_for('students') }}" role="button">students</a>
+        <a class="btn btn-outline-primary" href="{{ url_for('subjects') }}" role="button">subjects</a>
+        <a class="btn btn-outline-primary" href="{{ url_for('teachers') }}" role="button">teachers</a>
+        <a class="btn btn-outline-primary" href="{{ url_for('teachers_subjects') }}" role="button">teachers_subjects</a>
+      </center>  
+  </body>
 </html>

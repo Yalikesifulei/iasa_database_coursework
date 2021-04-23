@@ -4,42 +4,16 @@
     <head>
         <meta charset="utf-8">
         <title>Untitled Document</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     </head>
     <body>
-        <table>
-            <thead>
+        <table class="table table-striped">
+            <thead class="thead-light">
             <tr>
-				<th>student_id</th>
-				<th>subject_id</th>
-				<th>teacher_id</th>
-				<th>command</th>
-				<th>conn_id</th>
-				<th>current_memory</th>
-				<th>current_statement</th>
-				<th>db</th>
-				<th>full_scan</th>
-				<th>last_statement</th>
-				<th>last_statement_latency</th>
-				<th>last_wait</th>
-				<th>last_wait_latency</th>
-				<th>lock_latency</th>
-				<th>pid</th>
-				<th>program_name</th>
-				<th>progress</th>
-				<th>rows_affected</th>
-				<th>rows_examined</th>
-				<th>rows_sent</th>
-				<th>source</th>
-				<th>state</th>
-				<th>statement_latency</th>
-				<th>thd_id</th>
-				<th>time</th>
-				<th>tmp_disk_tables</th>
-				<th>tmp_tables</th>
-				<th>trx_autocommit</th>
-				<th>trx_latency</th>
-				<th>trx_state</th>
-				<th>user</th>
+				<th scope="col">student_id</th>
+				<th scope="col">subject_id</th>
+				<th scope="col">teacher_id</th>
 
         </tr>
             </thead>
@@ -49,34 +23,6 @@
 						<td>{{row[0]}}</td>
 						<td>{{row[1]}}</td>
 						<td>{{row[2]}}</td>
-						<td>{{row[3]}}</td>
-						<td>{{row[4]}}</td>
-						<td>{{row[5]}}</td>
-						<td>{{row[6]}}</td>
-						<td>{{row[7]}}</td>
-						<td>{{row[8]}}</td>
-						<td>{{row[9]}}</td>
-						<td>{{row[10]}}</td>
-						<td>{{row[11]}}</td>
-						<td>{{row[12]}}</td>
-						<td>{{row[13]}}</td>
-						<td>{{row[14]}}</td>
-						<td>{{row[15]}}</td>
-						<td>{{row[16]}}</td>
-						<td>{{row[17]}}</td>
-						<td>{{row[18]}}</td>
-						<td>{{row[19]}}</td>
-						<td>{{row[20]}}</td>
-						<td>{{row[21]}}</td>
-						<td>{{row[22]}}</td>
-						<td>{{row[23]}}</td>
-						<td>{{row[24]}}</td>
-						<td>{{row[25]}}</td>
-						<td>{{row[26]}}</td>
-						<td>{{row[27]}}</td>
-						<td>{{row[28]}}</td>
-						<td>{{row[29]}}</td>
-						<td>{{row[30]}}</td>
 
                     </tr>
                 {%endfor%}

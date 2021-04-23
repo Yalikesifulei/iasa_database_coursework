@@ -12,21 +12,23 @@ template = """
     <head>
         <meta charset="utf-8">
         <title>Untitled Document</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     </head>
     <body>
-        <table>
-            <thead>
+        <table class="table table-striped">
+            <thead class="thead-light">
             <tr>
 """
 
 for table in tables:
     print(table[0])
-    cursor.execute(f"select `COLUMN_NAME` from `INFORMATION_SCHEMA`.`COLUMNS`  where `TABLE_NAME` = '{table[0]}'")
+    cursor.execute(f"describe `{table[0]}`;")
     columns = cursor.fetchall()
     with open(f'./templates/{table[0]}.html', 'w') as fout:
         fout.write(template)
         for col in columns:
-            fout.write(f'\t\t\t\t<th>{col[0]}</th>\n')
+            fout.write(f'\t\t\t\t<th scope="col">{col[0]}</th>\n')
         fout.write("""
         </tr>
             </thead>
