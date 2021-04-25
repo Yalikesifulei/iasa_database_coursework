@@ -1,55 +1,50 @@
 <!doctype html>
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <title>Query</title>
-  </head>
-  <body>
-        <form action="/queries/task_1" method="post">
-            <p>
-                <label for="group_code">group_code</label>
-                <input type="text" name="group_code">
-            </p>
-            <p>
-                <label for="study_year">study_year</label>
-                <input type="text" name="study_year">
-            </p>
-            <p>
-                <label for="faculty_id">faculty_id</label>
-                <input type="text" name="faculty_id">
-            </p>
-            <p>
-                <label for="sex">sex</label>
-                <input type="text" name="sex">
-            </p>
-            <p>
-                <label for="age">age</label>
-                <input type="text" name="age">
-            </p>
-            <p>
-                <label for="has_children">has_children</label>
-                <input type="text" name="has_children">
-            </p>
-            <p>
-                <label for="scholarship">scholarship</label>
-                <input type="scholarship" name="scholarship">
-            </p>
-            <p>
-                <input type="submit">
-            </p>
-        </form>
+<html>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <title>Query</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-6">
+                    <form action="/queries/{{ task }}" method="post">
+                        {% for field in fields %}
+                            <div class="mb-3">
+                                <label for="{{ field }}" class="form-label">{{ field }}</label>
+                                <input type="text" name="{{ field }}" class="form-control">
+                            </div>
+                        {% endfor %}
+                        <p>
+                            <input type="submit" class="btn btn-primary">
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
 
+        {% if return_res %}
         {% if table|length > 0 %}
-            <div class="alert alert-success" role="alert">
-                Успішно отримано <b>{{ table|length }} записів</b>.
+            {% if (table|length)%10 == 1%}
+                    {% set ending = '' %}
+                {% elif (table|length)%10 in [1, 2, 3] and table|length not in [11, 12, 13, 14] %}
+                    {% set ending = 'и' %}
+                {% else %}
+                    {% set ending = 'ів' %}
+                {% endif %}
+        <div class="container col-4"></div>
+            <div class="alert alert-success container col-4" role="alert">
+                Успішно отримано <b>{{ table|length }} запис{{ ending }}</b>.
             </div>
         {% else %}
-            <div class="alert alert-warning" role="alert">
+            <div class="alert alert-warning container col-4" role="alert">
                 Отримано <b>0 записів</b>. Перевірте свій запит.
             </div>
+        </div>
         {% endif %}
         <table class="table table-striped">
         {% if columns|length > 0 %}
@@ -73,5 +68,6 @@
             </tbody>
         </table>
         {% endif %}
-  </body>
+        {% endif %}
+    </body>
 </html>

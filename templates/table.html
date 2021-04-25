@@ -8,15 +8,17 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     </head>
     <body>
-        {% if table|length > 0 %}
-            <div class="alert alert-success" role="alert">
-                Успішно отримано <b>{{ table|length }} записів</b>.
-            </div>
-        {% else %}
-            <div class="alert alert-warning" role="alert">
-                Отримано <b>0 записів</b>. Перевірте свій запит.
-            </div>
-        {% endif %}
+    <div class="container">
+        <div class="alert alert-success" role="alert">
+            {% if (table|length)%10 == 1%}
+                {% set ending = '' %}
+            {% elif (table|length)%10 == 2 or (table|length)%10 == 3 or (table|length)%10 == 4 %}
+                {% set ending = 'и' %}
+            {% else %}
+                {% set ending = 'ів' %}
+            {% endif %}
+            Успішно отримано <b>{{ table|length }} запис{{ ending }}</b>.
+        </div>
         <table class="table table-striped">
         {% if columns|length > 0 %}
             <thead class="thead-light">
@@ -39,5 +41,6 @@
             </tbody>
         </table>
         {% endif %}
+    </div>
     </body>
 </html> 

@@ -5,13 +5,13 @@
 drop procedure if exists task_1;
 delimiter $$
 create procedure task_1(
-	group_code varchar(10), # none is ''
-    study_year int,			# none is -1
-    faculty_id int,			# none is -1
-    sex varchar(1),			# none is ''
-    age int,				# none is -1
-    has_children tinyint,	# none is -1
-    scholarship int			# none is -1
+	group_code varchar(10),
+    study_year int,
+    faculty_id int,
+    sex varchar(2),
+    age int,
+    has_children tinyint,
+    scholarship int
 )
 begin
 	drop table if exists temp_table;
@@ -26,9 +26,9 @@ begin
         t1.group_code = t2.group_code and 
         t2.study_year != `study_year`; 
         end if;
-	if `group_code` != '' then 
+	if `group_code` != -1 then 
 		delete from temp_table where temp_table.group_code != `group_code`; end if;
-	if `sex` != '' then
+	if `sex` != -1 then
 		delete from temp_table where temp_table.sex != `sex`; end if;
 	if `age` != -1 then
 		delete from temp_table where (select timestampdiff(year, '2002-05-01', now()) != `age`); end if;
