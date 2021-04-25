@@ -1,0 +1,77 @@
+<!doctype html>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Query</title>
+  </head>
+  <body>
+        <form action="/queries/task_1" method="post">
+            <p>
+                <label for="group_code">group_code</label>
+                <input type="text" name="group_code">
+            </p>
+            <p>
+                <label for="study_year">study_year</label>
+                <input type="text" name="study_year">
+            </p>
+            <p>
+                <label for="faculty_id">faculty_id</label>
+                <input type="text" name="faculty_id">
+            </p>
+            <p>
+                <label for="sex">sex</label>
+                <input type="text" name="sex">
+            </p>
+            <p>
+                <label for="age">age</label>
+                <input type="text" name="age">
+            </p>
+            <p>
+                <label for="has_children">has_children</label>
+                <input type="text" name="has_children">
+            </p>
+            <p>
+                <label for="scholarship">scholarship</label>
+                <input type="scholarship" name="scholarship">
+            </p>
+            <p>
+                <input type="submit">
+            </p>
+        </form>
+
+        {% if table|length > 0 %}
+            <div class="alert alert-success" role="alert">
+                Успішно отримано <b>{{ table|length }} записів</b>.
+            </div>
+        {% else %}
+            <div class="alert alert-warning" role="alert">
+                Отримано <b>0 записів</b>. Перевірте свій запит.
+            </div>
+        {% endif %}
+        <table class="table table-striped">
+        {% if columns|length > 0 %}
+            <thead class="thead-light">
+                <tr>
+                {% for c in columns %}
+                    <th scope="col">{{ c }}</th>
+                {% endfor %}
+                </tr>
+            </thead>
+            <tbody>
+                {% for row in table %}
+                    <tr>
+                    {%for element in row %}
+						<td>
+                            {{ element }}
+                        </td>
+                        {% endfor %}
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        {% endif %}
+  </body>
+</html>
