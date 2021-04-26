@@ -15,16 +15,46 @@
                     <form action="/queries/{{ task }}" method="post">
                         {% for field in fields %}
                             <div class="mb-3">
-                                <label for="{{ field }}" class="form-label">{{ field }}</label>
-                                <input type="text" name="{{ field }}" class="form-control">
+                                <label for="{{ field.real_name }}" class="form-label">{{ field.display_name }}</label>
+                                {% if return_res and form_data[loop.index0] != -1%}
+                                    {% if field.field_type == 'list' %}
+                                        <select class="form-control" id="{{ field.real_name }}" name="{{ field.real_name }}">
+                                            <option value="">Оберіть значення</option>
+                                            {% set outer_loop = loop %}
+                                            {% for val in field.unique_values %}
+                                                {% if val.real_name == form_data[outer_loop.index0] %}
+                                                    <option value="{{ val.real_name }}" selected>{{ val.display_name }}</option>
+                                                {% else %}
+                                                    <option value="{{ val.real_name }}">{{ val.display_name }}</option>
+                                                {% endif %}
+                                            {% endfor %}
+                                        </select>
+                                    {% else %}
+                                        <input type="text" name="{{ field.real_name }}" class="form-control" value="{{ form_data[loop.index0] }}">
+                                    {% endif %}
+                                {% else %}
+                                    {% if field.field_type == 'list' %}
+                                        <select class="form-control" id="{{ field.real_name }}" name="{{ field.real_name }}">
+                                            <option value="">Оберіть значення</option>
+                                            {% for val in field.unique_values %}
+                                                <option value="{{ val.real_name }}">{{ val.display_name }}</option>
+                                            {% endfor %}
+                                        </select>
+                                    {% else %}
+                                        <input type="text" name="{{ field.real_name }}" class="form-control">
+                                    {% endif %}
+                                {% endif %}
                             </div>
                         {% endfor %}
-                        <p>
+                        <div class="row justify-content-center">
                             <input type="submit" class="btn btn-primary">
-                        </p>
+                        </div>
                     </form>
                 </div>
             </div>
+        </div>
+        <div style="line-height:100%;">
+            <br>
         </div>
 
         {% if return_res %}

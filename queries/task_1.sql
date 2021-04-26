@@ -31,7 +31,7 @@ begin
 	if `sex` != -1 then
 		delete from temp_table where temp_table.sex != `sex`; end if;
 	if `age` != -1 then
-		delete from temp_table where (select timestampdiff(year, '2002-05-01', now()) != `age`); end if;
+		delete from temp_table where (select timestampdiff(year, temp_table.birthday, now()) != `age`); end if;
 	if `has_children` != -1 then
 		delete from temp_table where temp_table.has_children != `has_children`; end if;
 	if `scholarship` != -1 then
