@@ -16,7 +16,7 @@ for ind, chair in enumerate(chairs):
     cursor.execute(request)
     db.commit()
 
-chairs = ['Наближених обчислень']
+chairs = ['Нетехнічного спрямування']
 
 cursor = db.cursor()
 for ind, chair in enumerate(chairs):

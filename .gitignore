@@ -1,2 +1,4 @@
 __pycache__/*.pyc
 inserts/*.xlsx
+kursach.mwb.beforefix
+.gitignore

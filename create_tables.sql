@@ -82,17 +82,18 @@ CREATE TABLE IF NOT EXISTS `kursach_v1`.`teachers` (
   `teacher_id` INT NOT NULL,
   `chair_id` INT NOT NULL,
   `name` VARCHAR(128) NOT NULL,
-  `sex` VARCHAR(1) NOT NULL,
   `title` VARCHAR(45) NOT NULL,
+  `sex` VARCHAR(1) NOT NULL,
+  `birthday` DATE NULL DEFAULT NULL,
+  `child_count` INT NULL DEFAULT NULL,
+  `is_studying` TINYINT NULL DEFAULT NULL,
   `phd_date` DATE NULL DEFAULT NULL,
   `phd_topic` VARCHAR(256) NULL DEFAULT NULL,
   `prof_date` DATE NULL DEFAULT NULL,
   `prof_topic` VARCHAR(256) NULL DEFAULT NULL,
-  `is_studying` TINYINT NULL DEFAULT NULL,
-  `sc_topic` VARCHAR(256) NULL DEFAULT NULL,
-  `sc_field` VARCHAR(256) NULL DEFAULT NULL,
-  `child_count` INT NULL DEFAULT NULL,
   `salary` INT NULL DEFAULT NULL,
+  `sc_topic` VARCHAR(128) NULL DEFAULT NULL,
+  `sc_field` VARCHAR(128) NULL DEFAULT NULL,
   PRIMARY KEY (`teacher_id`),
   UNIQUE INDEX `teacher_id_UNIQUE` (`teacher_id` ASC) VISIBLE,
   INDEX `chair_id_idx` (`chair_id` ASC) VISIBLE,
@@ -115,9 +116,9 @@ CREATE TABLE IF NOT EXISTS `kursach_v1`.`students` (
   `name` VARCHAR(128) NOT NULL,
   `sex` VARCHAR(1) NOT NULL,
   `birthday` DATE NULL DEFAULT NULL,
+  `has_children` TINYINT NULL DEFAULT NULL,
   `diploma_teacher_id` INT NULL DEFAULT NULL,
   `diploma_topic` VARCHAR(256) NULL DEFAULT NULL,
-  `has_children` TINYINT NULL DEFAULT NULL,
   `scholarship` INT NULL DEFAULT NULL,
   PRIMARY KEY (`student_id`),
   INDEX `student_group_idx` (`group_code` ASC) VISIBLE,
@@ -140,6 +141,7 @@ DROP TABLE IF EXISTS `kursach_v1`.`subjects` ;
 
 CREATE TABLE IF NOT EXISTS `kursach_v1`.`subjects` (
   `subject_id` INT NOT NULL,
+  `chair_id` INT NOT NULL,
   `subject_name` VARCHAR(128) NOT NULL,
   `subject_year` INT NOT NULL,
   `subject_semester` INT NOT NULL,
@@ -148,7 +150,13 @@ CREATE TABLE IF NOT EXISTS `kursach_v1`.`subjects` (
   `subject_lab_hours` INT NULL DEFAULT NULL,
   `subject_course_work_hours` INT NULL DEFAULT NULL,
   `subject_control` VARCHAR(45) NULL DEFAULT NULL,
-  PRIMARY KEY (`subject_id`))
+  PRIMARY KEY (`subject_id`),
+  INDEX `chair_id_idx` (`chair_id` ASC) VISIBLE,
+  CONSTRAINT `chair_id`
+    FOREIGN KEY (`chair_id`)
+    REFERENCES `kursach_v1`.`chairs` (`chair_id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8mb4
 COLLATE = utf8mb4_0900_ai_ci;
@@ -160,6 +168,7 @@ COLLATE = utf8mb4_0900_ai_ci;
 DROP TABLE IF EXISTS `kursach_v1`.`session` ;
 
 CREATE TABLE IF NOT EXISTS `kursach_v1`.`session` (
+  `session_id` INT NOT NULL,
   `student_id` INT NOT NULL,
   `subject_id` INT NOT NULL,
   `teacher_id` INT NOT NULL,
