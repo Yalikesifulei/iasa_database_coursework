@@ -8,8 +8,8 @@
 drop procedure if exists task_2;
 delimiter $$
 create procedure task_2(
-	chair_id int,
     faculty_id int,
+	chair_id int,
     title varchar(45),
     sex varchar(2),
     age int,
