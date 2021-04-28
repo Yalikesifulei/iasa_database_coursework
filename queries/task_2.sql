@@ -40,7 +40,7 @@ begin
 		delete from temp_table where (select timestampdiff(year, temp_table.birthday, now()) != `age`); 
         end if;
 	if `children` != -1 then
-		delete from temp_table where temp_table.child_count != `has_children`; 
+		delete from temp_table where temp_table.child_count != `children`; 
         end if;
 	if `phd_date_start` != '0000-00-00' then
 		delete from temp_table where 
