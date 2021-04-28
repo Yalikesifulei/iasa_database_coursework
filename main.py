@@ -12,7 +12,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return render_template('index.html', tables=tables)
+    return render_template('index.html', queries=queries)
 
 @app.route('/tables/<string:table_name>')
 def select_table(table_name):
@@ -30,10 +30,16 @@ def query(task):
         abort(404)
     return_res = False
     if request.method == 'POST':
-        form_data = [request.form.get(field.real_name) or -1 for field in queries[task]]
+        form_data = []
+        for field in queries[task].fields:
+            form_data.append(request.form.get(field.real_name))
+            if not form_data[-1] and field.field_type == 'date':
+                form_data[-1] = '0000-00-00'
+            if not form_data[-1] and field.field_type != 'date':
+                form_data[-1] = -1
         with db.cursor() as cursor:
             q = f"call {task}("
-            for field, data in zip(queries[task], form_data):
+            for field, data in zip(queries[task].fields, form_data):
                 q += f"@{field.real_name} := '{data}', "
             q = q[:-2] + ')'
             print(q)
@@ -43,7 +49,7 @@ def query(task):
         return_res = True
     if request.method == 'GET':
         records, columns, form_data = [], [], []     
-    return render_template('queries.html', task=task, fields=queries[task], 
+    return render_template('queries.html', task=task, descr=queries[task].description, fields=queries[task].fields, 
                             table=records, columns=columns, return_res=return_res, form_data=form_data)
 
 if __name__ == "__main__":

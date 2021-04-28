@@ -5,9 +5,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <title>Index</title>
+        <title>Головна сторінка</title>
     </head>
     <body>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item active" aria-current="page">Головна сторінка</li>
+            </ol>
+        </nav> 
         <center>
             <h1>Оберіть таблицю</h1>
             <a class="btn btn-outline-primary" href="/tables/faculties" role="button">Факультети</a>
@@ -28,21 +33,18 @@
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-12">
-                        <div class="card">
-                            <div class="card-body">
-                                <a href="queries/task_1" class="card-link">1. 	Отримати перелік і загальне число студентів зазначених груп 
-                                            або вказаного курсу (курсів) факультету повністю, за статевою ознакою, 
-                                            року, віком, ознакою наявності дітей, за ознакою отримання і розміром стипендії. </a>
+                        {% for query in queries %}
+                            <div class="card">
+                                <div class="card-body">
+                                    <a href="queries/{{ query }}" class="card-link">
+                                        {{ queries[query].description }}
+                                    </a>
+                                </div>
                             </div>
-                            <div class="card-body">
-                                <a href="queries/task_2" class="card-link">2. 	Отримати список і загальне число викладачів зазначених кафедр 
-                                           або зазначеного факультету повністю або зазначених категорій 
-                                           (асистенти, доценти, професори і т.д.) за статевою ознакою, 
-                                           року, віком, ознакою наявності та кількості дітей, розміру 
-                                           заробітної плати, є аспірантами, захистили кандидатські, 
-                                           докторські дисертації в зазначений період. </a>
+                            <div style="line-height:50%;">
+                                <br>
                             </div>
-                        </div>
+                        {% endfor %}
                     </div>
                 </div>
             </div>

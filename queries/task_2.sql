@@ -14,11 +14,11 @@ create procedure task_2(
     sex varchar(2),
     age int,
     children int,
-    salary int
-    #phd_date_start date,
-    #phd_date_end date,
-    #prof_date_start date,
-    #prof_date_end date
+    salary int,
+    phd_date_start date,
+    phd_date_end date,
+    prof_date_start date,
+    prof_date_end date
 )
 begin
 	drop table if exists temp_table;
@@ -41,6 +41,22 @@ begin
         end if;
 	if `children` != -1 then
 		delete from temp_table where temp_table.child_count != `has_children`; 
+        end if;
+	if `phd_date_start` != '0000-00-00' then
+		delete from temp_table where 
+			temp_table.phd_date < `phd_date_start` or temp_table.phd_date is NULL; 
+        end if;
+	if `phd_date_end` != '0000-00-00' then
+		delete from temp_table where 
+			temp_table.phd_date > `phd_date_end` or temp_table.phd_date is NULL; 
+        end if;
+	if `prof_date_start` != '0000-00-00' then
+		delete from temp_table where 
+			temp_table.prof_date < `prof_date_start` or temp_table.prof_date is NULL; 
+        end if;
+	if `prof_date_end` != '0000-00-00' then
+		delete from temp_table where 
+			temp_table.prof_date > `prof_date_end` or temp_table.prof_date is NULL; 
         end if;
 	if `salary` != -1 then
 		delete from temp_table where temp_table.salary < `salary`; 

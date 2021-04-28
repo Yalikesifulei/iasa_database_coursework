@@ -6,9 +6,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <title>Query</title>
+        <title>Запит {{ task[-1] }}</title>
     </head>
     <body>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/">Головна сторінка</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Запит {{ task[-1] }}</li>
+            </ol>
+        </nav> 
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-6">
@@ -16,7 +22,7 @@
                         {% for field in fields %}
                             <div class="mb-3">
                                 <label for="{{ field.real_name }}" class="form-label">{{ field.display_name }}</label>
-                                {% if return_res and form_data[loop.index0] != -1%}
+                                {% if return_res and form_data[loop.index0] not in [-1, '0000-00-00'] %}
                                     {% if field.field_type == 'list' %}
                                         <select class="form-control" id="{{ field.real_name }}" name="{{ field.real_name }}">
                                             <option value="">Оберіть значення</option>
@@ -29,6 +35,8 @@
                                                 {% endif %}
                                             {% endfor %}
                                         </select>
+                                    {% elif field.field_type == 'date' %}
+                                        <input type="date" id="{{ field.real_name }}" class="form-control" name="{{ field.real_name }}" value="{{ form_data[loop.index0] }}">
                                     {% else %}
                                         <input type="text" name="{{ field.real_name }}" class="form-control" value="{{ form_data[loop.index0] }}">
                                     {% endif %}
@@ -40,6 +48,8 @@
                                                 <option value="{{ val.real_name }}">{{ val.display_name }}</option>
                                             {% endfor %}
                                         </select>
+                                    {% elif field.field_type == 'date' %}
+                                        <input type="date" id="{{ field.real_name }}" class="form-control" name="{{ field.real_name }}">
                                     {% else %}
                                         <input type="text" name="{{ field.real_name }}" class="form-control">
                                     {% endif %}

@@ -3,11 +3,17 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Untitled Document</title>
+        <title>{{ table_name }}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     </head>
     <body>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/">Головна сторінка</a></li>
+                <li class="breadcrumb-item active" aria-current="page">{{ table_name }}</li>
+            </ol>
+        </nav> 
         <div class="alert alert-success" role="alert">
             {% if (table|length)%10 == 1%}
                 {% set ending = '' %}
