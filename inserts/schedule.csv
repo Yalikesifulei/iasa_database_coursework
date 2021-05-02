@@ -106,8 +106,6 @@ subject_id,teacher_id,group_code,lesson_type
 66,30,ÊÏ-82,prac
 66,30,ÍÒ-81,lec
 66,30,ÍÒ-81,prac
-66,30,ÍÒ-82,lec
-66,30,ÍÒ-82,prac
 71,24,ÊÏ-91,lec
 71,24,ÊÏ-91,prac
 71,24,ÊÏ-92,lec
@@ -149,7 +147,6 @@ subject_id,teacher_id,group_code,lesson_type
 9,14,ÊÏ-81,prac
 9,14,ÊÏ-82,prac
 9,14,ÍÒ-81,prac
-9,14,ÍÒ-82,prac
 10,14,ÔÀ-81,prac
 10,14,ÔÀ-83,prac
 10,14,ÊÏ-81,prac
@@ -437,8 +434,6 @@ subject_id,teacher_id,group_code,lesson_type
 72,17,ÊÏ-82,lab
 72,17,ÍÒ-81,lec
 72,17,ÍÒ-81,prac
-72,17,ÍÒ-82,lec
-72,17,ÍÒ-82,prac
 69,20,ÍÒ-81,lec
 69,20,ÍÒ-81,prac
 69,20,ÍÅ-81,lec
@@ -523,3 +518,7 @@ subject_id,teacher_id,group_code,lesson_type
 24,30,ÊÏ-81,lab
 24,30,ÊÏ-82,lec
 24,30,ÊÏ-82,lab
+,,,
+,,,
+,,,
+,,,

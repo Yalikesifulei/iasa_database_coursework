@@ -105,8 +105,6 @@ INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (66,30
 INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (66,30,'КП-82','prac');
 INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (66,30,'НТ-81','lec');
 INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (66,30,'НТ-81','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (66,30,'НТ-82','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (66,30,'НТ-82','prac');
 INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (71,24,'КП-91','lec');
 INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (71,24,'КП-91','prac');
 INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (71,24,'КП-92','lec');
@@ -148,7 +146,6 @@ INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (9,14,
 INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (9,14,'КП-81','prac');
 INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (9,14,'КП-82','prac');
 INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (9,14,'НТ-81','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (9,14,'НТ-82','prac');
 INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (10,14,'ФА-81','prac');
 INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (10,14,'ФА-83','prac');
 INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (10,14,'КП-81','prac');
@@ -436,8 +433,6 @@ INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (72,17
 INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (72,17,'КП-82','lab');
 INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (72,17,'НТ-81','lec');
 INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (72,17,'НТ-81','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (72,17,'НТ-82','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (72,17,'НТ-82','prac');
 INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (69,20,'НТ-81','lec');
 INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (69,20,'НТ-81','prac');
 INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (69,20,'НЕ-81','lec');

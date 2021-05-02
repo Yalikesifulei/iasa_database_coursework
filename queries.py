@@ -27,11 +27,21 @@ with db.cursor() as cursor:
     chairs_list = cursor.fetchall()
     cursor.execute(f'select `group_code` from `groups`')
     groups_list = cursor.fetchall()
-    
+
+semester_list = [
+    ListElement(1, '1 курс, 1 семестр'),
+    ListElement(2, '1 курс, 2 семестр'),
+    ListElement(3, '2 курс, 1 семестр'),
+    ListElement(4, '2 курс, 2 семестр'),
+    ListElement(5, '3 курс, 1 семестр'),
+    ListElement(6, '3 курс, 2 семестр'),
+    ListElement(7, '4 курс, 1 семестр'),
+    ListElement(8, '4 курс, 2 семестр')
+]
 
 queries = {
     'task_1': Query('''
-            Отримати перелік і загальне число студентів зазначених груп 
+            1. Отримати перелік і загальне число студентів зазначених груп 
             або вказаного курсу (курсів) факультету повністю, за статевою ознакою, 
             року, віком, ознакою наявності дітей, за ознакою отримання і розміром стипендії.''',
         [
@@ -46,7 +56,7 @@ queries = {
                                                                 ListElement(1892, 'підвищена')])
         ]),
     'task_2': Query('''
-            Отримати список і загальне число викладачів зазначених кафедр 
+            2. Отримати список і загальне число викладачів зазначених кафедр 
             або зазначеного факультету повністю або зазначених категорій 
             (асистенти, доценти, професори і т.д.) за статевою ознакою, 
             року, віком, ознакою наявності та кількості дітей, розміру 
@@ -70,11 +80,22 @@ queries = {
             QueryField('prof_date_end', 'Захист докторської, до', 'date')
         ]),
     'task_3': Query('''
-            Отримати перелік і загальне число тем кандидатських 
+            3. Отримати перелік і загальне число тем кандидатських 
             і докторських дисертацій, які захистили співробітники 
             зазначеної кафедри для зазначеного факультету.''',
         [
             QueryField('faculty_id', 'Факультет', 'list', [ListElement(faculty[0], faculty[1]) for faculty in faculties_list]),
             QueryField('chair_id', 'Кафедра', 'list', [ListElement(chair[0], chair[1]) for chair in chairs_list]),
-        ])
+        ]),
+    'task_4': Query('''
+            4.	Отримати перелік кафедр, які проводять заняття 
+            у зазначеній групі або на зазначеному курсі 
+            вказаного факультету в зазначеному семестрі, 
+            або за вказаний період.''',
+        [
+            QueryField('faculty_id', 'Факультет', 'list', [ListElement(faculty[0], faculty[1]) for faculty in faculties_list]),
+            QueryField('group_code', 'Група', 'list', [ListElement(group_code[0]) for group_code in groups_list]),
+            QueryField('semester_from', 'Семестр, від', 'list', semester_list),
+            QueryField('semester_to', 'Семестр, до', 'list', semester_list)
+        ]),
 }
