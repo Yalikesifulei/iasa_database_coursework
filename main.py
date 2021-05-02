@@ -6,7 +6,7 @@ from queries import queries
 
 tables = {'chairs': 'Кафедри', 'faculties': 'Факультети', 'groups': 'Групи', 
           'session': 'Сесія','students': 'Студенти', 'subjects': 'Дисципліни', 
-          'teachers': 'Викладачі', 'teachers_subjects': 'Викладачі та предмети'}
+          'teachers': 'Викладачі', 'schedule': 'Розклад'}
 
 app = Flask(__name__)
 

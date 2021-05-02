@@ -5,5 +5,5 @@ db = pymysql.connect(
     port=3307,
     user='root',
     password='galganov',
-    database='kursach_v1'
+    database='kursach'
 )
