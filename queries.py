@@ -27,7 +27,20 @@ with db.cursor() as cursor:
     chairs_list = cursor.fetchall()
     cursor.execute(f'select `group_code` from `groups`')
     groups_list = cursor.fetchall()
+    cursor.execute(f'select `subject_id`, `subject_name` from `subjects`')
+    subjects_list = cursor.fetchall()
 
+faculties_list = [ListElement(faculty[0], faculty[1]) for faculty in faculties_list]
+chairs_list = [ListElement(chair[0], chair[1]) for chair in chairs_list]
+groups_list = [ListElement(group_code[0]) for group_code in groups_list]
+subjects_list = [ListElement(subject[0], subject[1]) for subject in subjects_list]
+study_year_list = [ListElement(1), ListElement(2), ListElement(3), ListElement(4)]
+lesson_type_list = [
+    ListElement('lec', 'лекція'),
+    ListElement('prac', 'практика'),
+    ListElement('lab', 'лабораторні'),
+    ListElement('cw', 'курсова робота')
+]
 semester_list = [
     ListElement(1, '1 курс, 1 семестр'),
     ListElement(2, '1 курс, 2 семестр'),
@@ -45,15 +58,15 @@ queries = {
             або вказаного курсу (курсів) факультету повністю, за статевою ознакою, 
             року, віком, ознакою наявності дітей, за ознакою отримання і розміром стипендії.''',
         [
-            QueryField('group_code', 'Група', 'list', [ListElement(group_code[0]) for group_code in groups_list]), 
-            QueryField('study_year', 'Рік навчання', 'list', [ListElement(1), ListElement(2), ListElement(3), ListElement(4)]),
-            QueryField('faculty_id', 'Факультет', 'list', [ListElement(faculty[0], faculty[1]) for faculty in faculties_list]), 
+            QueryField('group_code', 'Група', 'list', groups_list), 
+            QueryField('study_year', 'Курс', 'list', study_year_list),
+            QueryField('faculty_id', 'Факультет', 'list', faculties_list), 
             QueryField('sex', 'Стать', 'list', [ListElement('ч', 'чоловіча'), ListElement('ж', 'жіноча')]), 
             QueryField('age', 'Вік'),
             QueryField('has_children', 'Наявність дітей', 'list', [ListElement(0, 'немає'), ListElement(1, 'є')]), 
             QueryField('scholarship', 'Розмір стипендії', 'list', [ListElement(0, 'немає'), 
-                                                                ListElement(1300, 'звичайна'),
-                                                                ListElement(1892, 'підвищена')])
+                                                                   ListElement(1300, 'звичайна'),
+                                                                   ListElement(1892, 'підвищена')])
         ]),
     'task_2': Query('''
             2. Отримати список і загальне число викладачів зазначених кафедр 
@@ -63,13 +76,13 @@ queries = {
             заробітної плати, є аспірантами, захистили кандидатські, 
             докторські дисертації в зазначений період.''',
         [
-            QueryField('faculty_id', 'Факультет', 'list', [ListElement(faculty[0], faculty[1]) for faculty in faculties_list]), 
-            QueryField('chair_id', 'Кафедра', 'list', [ListElement(chair[0], chair[1]) for chair in chairs_list]),
+            QueryField('faculty_id', 'Факультет', 'list', faculties_list), 
+            QueryField('chair_id', 'Кафедра', 'list', chairs_list),
             QueryField('title', 'Посада', 'list', [ListElement('асистент'),
-                                                ListElement('викладач'),
-                                                ListElement('старший викладач'),
-                                                ListElement('доцент'),
-                                                ListElement('професор')]),
+                                                   ListElement('викладач'),
+                                                   ListElement('старший викладач'),
+                                                   ListElement('доцент'),
+                                                   ListElement('професор')]),
             QueryField('sex', 'Стать', 'list', [ListElement('ч', 'чоловіча'), ListElement('ж', 'жіноча')]), 
             QueryField('age', 'Вік'),
             QueryField('children', 'Кількість дітей'),
@@ -84,8 +97,8 @@ queries = {
             і докторських дисертацій, які захистили співробітники 
             зазначеної кафедри для зазначеного факультету.''',
         [
-            QueryField('faculty_id', 'Факультет', 'list', [ListElement(faculty[0], faculty[1]) for faculty in faculties_list]),
-            QueryField('chair_id', 'Кафедра', 'list', [ListElement(chair[0], chair[1]) for chair in chairs_list]),
+            QueryField('faculty_id', 'Факультет', 'list', faculties_list),
+            QueryField('chair_id', 'Кафедра', 'list', chairs_list),
         ]),
     'task_4': Query('''
             4.	Отримати перелік кафедр, які проводять заняття 
@@ -93,9 +106,34 @@ queries = {
             вказаного факультету в зазначеному семестрі, 
             або за вказаний період.''',
         [
-            QueryField('faculty_id', 'Факультет', 'list', [ListElement(faculty[0], faculty[1]) for faculty in faculties_list]),
-            QueryField('group_code', 'Група', 'list', [ListElement(group_code[0]) for group_code in groups_list]),
+            QueryField('faculty_id', 'Факультет', 'list', faculties_list),
+            QueryField('group_code', 'Група', 'list', groups_list),
             QueryField('semester_from', 'Семестр, від', 'list', semester_list),
             QueryField('semester_to', 'Семестр, до', 'list', semester_list)
         ]),
+    'task_5': Query('''
+            5.	Отримати список і загальне число викладачів, 
+            які проводили (проводять) заняття по вказаній 
+            дисципліні в зазначеній групі або на зазначеному 
+            курсі вказаного факультету.''',
+        [
+            QueryField('subject_name', 'Дисципліна', 'list', subjects_list),
+            QueryField('faculty_id', 'Факультет', 'list', faculties_list),
+            QueryField('semester_from', 'Семестр, від', 'list', semester_list),
+            QueryField('semester_to', 'Семестр, до', 'list', semester_list),
+            QueryField('group_code', 'Група', 'list', groups_list)
+        ]),
+    'task_6': Query('''
+            6.	Отримати перелік і загальне число викладачів, 
+            які проводили (проводять) лекційні, семінарські 
+            та інші види занять у зазначеній групі або на 
+            зазначеному курсі вказаного факультету в зазначеному 
+            семестрі, або за вказаний період. ''',
+        [
+            QueryField('lesson_type', 'Вид заняття', 'list', lesson_type_list),
+            QueryField('faculty_id', 'Факультет', 'list', faculties_list),
+            QueryField('semester_from', 'Семестр, від', 'list', semester_list),
+            QueryField('semester_to', 'Семестр, до', 'list', semester_list),
+            QueryField('group_code', 'Група', 'list', groups_list)
+        ])
 }

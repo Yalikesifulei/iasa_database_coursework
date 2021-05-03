@@ -1,12 +1,13 @@
-# 5.	Отримати список і загальне число викладачів, 
-#		які проводили (проводять) заняття по вказаній 
-#		дисципліні в зазначеній групі або на зазначеному 
-#		курсі вказаного факультету. 
+# 6.	Отримати перелік і загальне число викладачів, 
+#		які проводили (проводять) лекційні, семінарські 
+#		та інші види занять у зазначеній групі або на 
+#		зазначеному курсі вказаного факультету в зазначеному 
+#		семестрі, або за вказаний період. 
 
-drop procedure if exists task_5;
+drop procedure if exists task_6;
 delimiter $$
-create procedure task_5(
-	subject_id int,
+create procedure task_6(
+	lesson_type varchar(4),
 	faculty_id int,
 	semester_from int,
     semester_to int,
@@ -15,8 +16,8 @@ create procedure task_5(
 begin
 	drop table if exists temp_table;
     create table temp_table select * from `schedule`;
-	if `subject_id` != -1 then
-		delete from temp_table where temp_table.subject_id != `subject_id`;
+	if `lesson_type` != -1 then
+		delete from temp_table where temp_table.lesson_type != `lesson_type`;
 	end if;
     if `group_code` != -1 then
 		delete from temp_table where temp_table.group_code != `group_code`;
