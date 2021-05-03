@@ -35,6 +35,7 @@ begin
         on t1.group_code = t2.group_code join `chairs` t3 on
         t2.chair_id = t3.chair_id and t3.faculty_id != `faculty_id`;
 	end if;
+    drop table if exists temp_table2;
     create table temp_table2 select distinct `teacher_id` from temp_table;
     select * from `teachers` t1 join temp_table2 t2 on
 		t1.teacher_id = t2.teacher_id;
