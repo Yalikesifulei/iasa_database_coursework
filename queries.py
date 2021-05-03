@@ -33,6 +33,7 @@ with db.cursor() as cursor:
 faculties_list = [ListElement(faculty[0], faculty[1]) for faculty in faculties_list]
 chairs_list = [ListElement(chair[0], chair[1]) for chair in chairs_list]
 groups_list = [ListElement(group_code[0]) for group_code in groups_list]
+subjects_list = sorted(list(subjects_list), key=lambda t: t[1])
 subjects_list = [ListElement(subject[0], subject[1]) for subject in subjects_list]
 study_year_list = [ListElement(1), ListElement(2), ListElement(3), ListElement(4)]
 lesson_type_list = [
@@ -40,6 +41,13 @@ lesson_type_list = [
     ListElement('prac', 'практика'),
     ListElement('lab', 'лабораторні'),
     ListElement('cw', 'курсова робота')
+]
+marks_list = [
+    ListElement('A', 'Відмінно (95-100)'),
+    ListElement('B', 'Дуже добре (85-94)'),
+    ListElement('C', 'Добре (75-84)'),
+    ListElement('D', 'Задовільно (65-74)'),
+    ListElement('E', 'Достатньо (60-64)')
 ]
 semester_list = [
     ListElement(1, '1 курс, 1 семестр'),
@@ -128,12 +136,21 @@ queries = {
             які проводили (проводять) лекційні, семінарські 
             та інші види занять у зазначеній групі або на 
             зазначеному курсі вказаного факультету в зазначеному 
-            семестрі, або за вказаний період. ''',
+            семестрі, або за вказаний період.''',
         [
             QueryField('lesson_type', 'Вид заняття', 'list', lesson_type_list),
             QueryField('faculty_id', 'Факультет', 'list', faculties_list),
             QueryField('semester_from', 'Семестр, від', 'list', semester_list),
             QueryField('semester_to', 'Семестр, до', 'list', semester_list),
             QueryField('group_code', 'Група', 'list', groups_list)
+        ]),
+    'task_7': Query('''
+            7.	Отримати список і загальне число студентів 
+                зазначених груп, які здали залік або іспит
+                з вказаною дисципліни зі встановленою оцінкою.''',
+        [
+            QueryField('group_code', 'Група', 'list', groups_list),
+            QueryField('subject_name', 'Дисципліна', 'list', subjects_list),
+            QueryField('mark', 'Оцінка', 'list', marks_list)
         ])
 }
