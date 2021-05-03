@@ -33,5 +33,3 @@ begin
         join `subjects` t3 on t1.subject_id = t3.subject_id;
     drop table temp_table;
 end $$
-
-call task_7(-1, -1, 'A');
