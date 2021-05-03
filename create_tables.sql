@@ -74,6 +74,27 @@ COLLATE = utf8mb4_0900_ai_ci;
 
 
 -- -----------------------------------------------------
+-- Table `kursach`.`subjects`
+-- -----------------------------------------------------
+DROP TABLE IF EXISTS `kursach`.`subjects` ;
+
+CREATE TABLE IF NOT EXISTS `kursach`.`subjects` (
+  `subject_id` INT NOT NULL,
+  `subject_name` VARCHAR(128) NOT NULL,
+  `subject_year` INT NOT NULL,
+  `subject_semester` INT NOT NULL,
+  `subject_lec_hours` INT NULL DEFAULT NULL,
+  `subject_prac_hours` INT NULL DEFAULT NULL,
+  `subject_lab_hours` INT NULL DEFAULT NULL,
+  `subject_course_work_hours` INT NULL DEFAULT NULL,
+  `subject_control` VARCHAR(45) NULL DEFAULT NULL,
+  PRIMARY KEY (`subject_id`))
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8mb4
+COLLATE = utf8mb4_0900_ai_ci;
+
+
+-- -----------------------------------------------------
 -- Table `kursach`.`teachers`
 -- -----------------------------------------------------
 DROP TABLE IF EXISTS `kursach`.`teachers` ;
@@ -100,6 +121,33 @@ CREATE TABLE IF NOT EXISTS `kursach`.`teachers` (
   CONSTRAINT `chair_id_teacher`
     FOREIGN KEY (`chair_id`)
     REFERENCES `kursach`.`chairs` (`chair_id`))
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8mb4
+COLLATE = utf8mb4_0900_ai_ci;
+
+
+-- -----------------------------------------------------
+-- Table `kursach`.`schedule`
+-- -----------------------------------------------------
+DROP TABLE IF EXISTS `kursach`.`schedule` ;
+
+CREATE TABLE IF NOT EXISTS `kursach`.`schedule` (
+  `subject_id` INT NOT NULL,
+  `teacher_id` INT NOT NULL,
+  `group_code` VARCHAR(10) NULL DEFAULT NULL,
+  `lesson_type` VARCHAR(4) NULL DEFAULT NULL,
+  INDEX `teacher_id_idx` (`teacher_id` ASC) VISIBLE,
+  INDEX `subject_id_idx` (`subject_id` ASC) VISIBLE,
+  INDEX `group_code_idx` (`group_code` ASC) VISIBLE,
+  CONSTRAINT `group_code`
+    FOREIGN KEY (`group_code`)
+    REFERENCES `kursach`.`groups` (`group_code`),
+  CONSTRAINT `subject_id`
+    FOREIGN KEY (`subject_id`)
+    REFERENCES `kursach`.`subjects` (`subject_id`),
+  CONSTRAINT `teacher_id`
+    FOREIGN KEY (`teacher_id`)
+    REFERENCES `kursach`.`teachers` (`teacher_id`))
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8mb4
 COLLATE = utf8mb4_0900_ai_ci;
@@ -135,43 +183,15 @@ COLLATE = utf8mb4_0900_ai_ci;
 
 
 -- -----------------------------------------------------
--- Table `kursach`.`subjects`
--- -----------------------------------------------------
-DROP TABLE IF EXISTS `kursach`.`subjects` ;
-
-CREATE TABLE IF NOT EXISTS `kursach`.`subjects` (
-  `subject_id` INT NOT NULL,
-  `chair_id` INT NOT NULL,
-  `subject_name` VARCHAR(128) NOT NULL,
-  `subject_year` INT NOT NULL,
-  `subject_semester` INT NOT NULL,
-  `subject_lec_hours` INT NULL DEFAULT NULL,
-  `subject_prac_hours` INT NULL DEFAULT NULL,
-  `subject_lab_hours` INT NULL DEFAULT NULL,
-  `subject_course_work_hours` INT NULL DEFAULT NULL,
-  `subject_control` VARCHAR(45) NULL DEFAULT NULL,
-  PRIMARY KEY (`subject_id`),
-  INDEX `chair_id_idx` (`chair_id` ASC) VISIBLE,
-  CONSTRAINT `chair_id`
-    FOREIGN KEY (`chair_id`)
-    REFERENCES `kursach`.`chairs` (`chair_id`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION)
-ENGINE = InnoDB
-DEFAULT CHARACTER SET = utf8mb4
-COLLATE = utf8mb4_0900_ai_ci;
-
-
--- -----------------------------------------------------
 -- Table `kursach`.`session`
 -- -----------------------------------------------------
 DROP TABLE IF EXISTS `kursach`.`session` ;
 
 CREATE TABLE IF NOT EXISTS `kursach`.`session` (
-  `session_id` INT NOT NULL,
   `student_id` INT NOT NULL,
   `subject_id` INT NOT NULL,
   `teacher_id` INT NOT NULL,
+  `mark` INT NOT NULL,
   INDEX `student_idx` (`student_id` ASC) VISIBLE,
   INDEX `subject_idx` (`subject_id` ASC) VISIBLE,
   INDEX `teacher_idx` (`teacher_id` ASC) VISIBLE,
@@ -184,35 +204,6 @@ CREATE TABLE IF NOT EXISTS `kursach`.`session` (
   CONSTRAINT `teacher`
     FOREIGN KEY (`teacher_id`)
     REFERENCES `kursach`.`teachers` (`teacher_id`))
-ENGINE = InnoDB
-DEFAULT CHARACTER SET = utf8mb4
-COLLATE = utf8mb4_0900_ai_ci;
-
-
--- -----------------------------------------------------
--- Table `kursach`.`schedule`
--- -----------------------------------------------------
-DROP TABLE IF EXISTS `kursach`.`schedule` ;
-
-CREATE TABLE IF NOT EXISTS `kursach`.`schedule` (
-  `subject_id` INT NOT NULL,
-  `teacher_id` INT NOT NULL,
-  `group_code` VARCHAR(10) NULL,
-  `lesson_type` VARCHAR(4) NULL,
-  INDEX `teacher_id_idx` (`teacher_id` ASC) VISIBLE,
-  INDEX `subject_id_idx` (`subject_id` ASC) VISIBLE,
-  INDEX `group_code_idx` (`group_code` ASC) VISIBLE,
-  CONSTRAINT `subject_id`
-    FOREIGN KEY (`subject_id`)
-    REFERENCES `kursach`.`subjects` (`subject_id`),
-  CONSTRAINT `teacher_id`
-    FOREIGN KEY (`teacher_id`)
-    REFERENCES `kursach`.`teachers` (`teacher_id`),
-  CONSTRAINT `group_code`
-    FOREIGN KEY (`group_code`)
-    REFERENCES `kursach`.`groups` (`group_code`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION)
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8mb4
 COLLATE = utf8mb4_0900_ai_ci;
