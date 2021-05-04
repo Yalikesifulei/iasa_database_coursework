@@ -29,6 +29,8 @@ with db.cursor() as cursor:
     groups_list = cursor.fetchall()
     cursor.execute(f'select `subject_id`, `subject_name` from `subjects`')
     subjects_list = cursor.fetchall()
+    cursor.execute(f'select `teacher_id`, `name` from `teachers`')
+    teachers_list = cursor.fetchall()
 
 faculties_list = [ListElement(faculty[0], faculty[1]) for faculty in faculties_list]
 chairs_list = [ListElement(chair[0], chair[1]) for chair in chairs_list]
@@ -36,6 +38,7 @@ groups_list = [ListElement(group_code[0]) for group_code in groups_list]
 subjects_list = sorted(list(subjects_list), key=lambda t: t[1])
 subjects_list = [ListElement(subject[0], subject[1]) for subject in subjects_list]
 study_year_list = [ListElement(1), ListElement(2), ListElement(3), ListElement(4)]
+teachers_list = [ListElement(teacher[0], teacher[1]) for teacher in teachers_list]
 lesson_type_list = [
     ListElement('lec', 'лекція'),
     ListElement('prac', 'практика'),
@@ -150,7 +153,7 @@ queries = {
             з вказаною дисципліни зі встановленою оцінкою.''',
         [
             QueryField('group_code', 'Група', 'list', groups_list),
-            QueryField('subject_name', 'Дисципліна', 'list', subjects_list),
+            QueryField('subject_id', 'Дисципліна', 'list', subjects_list),
             QueryField('mark', 'Оцінка', 'list', marks_list)
         ]),
     'task_8': Query('''
@@ -164,5 +167,26 @@ queries = {
             QueryField('semester_from', 'Семестр, від', 'list', semester_list),
             QueryField('semester_to', 'Семестр, до', 'list', semester_list),
             QueryField('mark', 'Мін. оцінка, від', 'list', marks_list)
+        ]),
+    'task_9': Query('''
+            9.	Отримати перелік викладачів, які беруть (брали) 
+            іспити в зазначених групах, із зазначених дисциплін, 
+            в зазначеному семестрі.''',
+        [
+            QueryField('group_code', 'Група', 'list', groups_list),
+            QueryField('subject_id', 'Дисципліна', 'list', subjects_list),
+            QueryField('semester_from', 'Семестр, від', 'list', semester_list),
+            QueryField('semester_to', 'Семестр, до', 'list', semester_list)
+        ]),
+    'task_10': Query('''
+            10.	Отримати список студентів зазначених груп, 
+            яким заданий викладач поставив деяку оцінку 
+            за іспит з певних дисциплін, в зазначених семестрах, 
+            за деякий період. ''',
+        [
+            QueryField('group_code', 'Група', 'list', groups_list),
+            QueryField('teacher_id', 'Викладач', 'list', teachers_list),
+            QueryField('semester_from', 'Семестр, від', 'list', semester_list),
+            QueryField('semester_to', 'Семестр, до', 'list', semester_list)
         ])
 }

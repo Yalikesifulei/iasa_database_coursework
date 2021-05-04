@@ -6,18 +6,28 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <title>Запит {{ task[-1] }}</title>
+        {% if task[-2] == '_' %}
+            {% set task_num = task[-1]%}
+        {% else %}
+            {% set task_num = task[-2:] %}
+        {% endif %}
+        <title>Запит {{ task_num }}</title>
     </head>
     <body>
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="/">Головна сторінка</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Запит {{ task[-1] }}</li>
+                <li class="breadcrumb-item active" aria-current="page">Запит {{ task_num }}</li>
             </ol>
         </nav> 
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-6">
+                    <div class="card">
+                        <div class="card-body text-left">
+                            {{ descr }}
+                        </div>
+                    </div>
                     <form action="/queries/{{ task }}" method="post">
                         {% for field in fields %}
                             <div class="mb-3">

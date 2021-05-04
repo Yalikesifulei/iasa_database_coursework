@@ -28,7 +28,7 @@ begin
             when `mark` = 'A' then delete from temp_table t where t.mark not between 95 and 100;
 		end case;
 	end if;
-	select t1.student_id, t2.`name`, t3.`subject_name`, t1.mark from temp_table t1 
+	select t1.student_id, t2.`name`, t2.`group_code`, t3.`subject_name`, t1.mark from temp_table t1 
 		join `students` t2 on t1.student_id = t2.student_id 
         join `subjects` t3 on t1.subject_id = t3.subject_id;
     drop table temp_table;
