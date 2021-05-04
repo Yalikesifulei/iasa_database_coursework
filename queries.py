@@ -38,7 +38,15 @@ groups_list = [ListElement(group_code[0]) for group_code in groups_list]
 subjects_list = sorted(list(subjects_list), key=lambda t: t[1])
 subjects_list = [ListElement(subject[0], subject[1]) for subject in subjects_list]
 study_year_list = [ListElement(1), ListElement(2), ListElement(3), ListElement(4)]
+teachers_list = sorted(list(teachers_list), key=lambda t: t[1])
 teachers_list = [ListElement(teacher[0], teacher[1]) for teacher in teachers_list]
+teacher_title_list = [
+    ListElement('асистент'),
+    ListElement('викладач'),
+    ListElement('старший викладач'),
+    ListElement('доцент'),
+    ListElement('професор')
+]
 lesson_type_list = [
     ListElement('lec', 'лекція'),
     ListElement('prac', 'практика'),
@@ -89,11 +97,7 @@ queries = {
         [
             QueryField('faculty_id', 'Факультет', 'list', faculties_list), 
             QueryField('chair_id', 'Кафедра', 'list', chairs_list),
-            QueryField('title', 'Посада', 'list', [ListElement('асистент'),
-                                                   ListElement('викладач'),
-                                                   ListElement('старший викладач'),
-                                                   ListElement('доцент'),
-                                                   ListElement('професор')]),
+            QueryField('title', 'Посада', 'list', teacher_title_list),
             QueryField('sex', 'Стать', 'list', [ListElement('ч', 'чоловіча'), ListElement('ж', 'жіноча')]), 
             QueryField('age', 'Вік'),
             QueryField('children', 'Кількість дітей'),
@@ -182,11 +186,35 @@ queries = {
             10.	Отримати список студентів зазначених груп, 
             яким заданий викладач поставив деяку оцінку 
             за іспит з певних дисциплін, в зазначених семестрах, 
-            за деякий період. ''',
+            за деякий період.''',
         [
             QueryField('group_code', 'Група', 'list', groups_list),
             QueryField('teacher_id', 'Викладач', 'list', teachers_list),
             QueryField('semester_from', 'Семестр, від', 'list', semester_list),
             QueryField('semester_to', 'Семестр, до', 'list', semester_list)
+        ]),
+    'task_11': Query('''
+            11.	Отримати список студентів і тим дипломних робіт 
+            на зазначеній кафедрі або у зазначеного викладача.''',
+        [
+            QueryField('chair_id', 'Кафедра', 'list', chairs_list),
+            QueryField('teacher_id', 'Викладач', 'list', teachers_list)
+        ]),
+    'task_12': Query('''
+            12.	Отримати список керівників дипломних робіт 
+            по заданій кафедрі або факультету повністю 
+            і окремо по деяким категоріям викладачів. ''',
+        [
+            QueryField('faculty_id', 'Факультет', 'list', faculties_list),
+            QueryField('chair_id', 'Кафедра', 'list', chairs_list),
+            QueryField('title', 'Посада', 'list', teacher_title_list)
+        ]),
+    'task_13': Query('''
+            13.	Отримати навантаження викладачів (назва дисципліни, кількість годин), 
+            її обсяг на окремі види занять і загальне навантаження в зазначеному 
+            семестрі для конкретного викладача або для викладачів зазначеної кафедри. ''',
+        [
+            QueryField('teacher_id', 'Викладач', 'list', teachers_list),
+            QueryField('chair_id', 'Кафедра', 'list', chairs_list)
         ])
 }

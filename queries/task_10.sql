@@ -18,7 +18,7 @@ begin
 		delete t1 from temp_table t1 join `students` t2 on
         t1.student_id = t2.student_id and t2.group_code != `group_code`;
 	end if;
-    if teacher_id != -1 then
+    if `teacher_id` != -1 then
 		delete from temp_table where temp_table.teacher_id != `teacher_id`;
 	end if;
     if `semester_from` != -1 then
