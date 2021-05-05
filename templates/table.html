@@ -6,6 +6,11 @@
         <title>{{ table_name }}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.datatables.net/1.10.22/css/dataTables.bootstrap4.min.css">
+        <script src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
+        <script src="https://cdn.datatables.net/1.10.22/js/dataTables.bootstrap4.min.js"></script>
     </head>
     <body>
         <nav aria-label="breadcrumb">
@@ -24,7 +29,7 @@
             {% endif %}
             Успішно отримано <b>{{ table|length }} запис{{ ending }}</b> з таблиці <b>{{ table_name }}</b>.
         </div>
-        <table class="table table-striped">
+        <table class="table table-striped" id="sortTable">
         {% if columns|length > 0 %}
             <thead class="thead-light">
                 <tr>
@@ -46,5 +51,15 @@
             </tbody>
         </table>
         {% endif %}
+        <script>
+            $(document).ready(function() {
+            $('#sortTable').DataTable( {
+                "pageLength": 100,
+                "language": {
+                    url: '//cdn.datatables.net/plug-ins/1.10.24/i18n/Ukrainian.json'
+                }
+            } );
+        } );
+        </script>
     </body>
 </html> 
