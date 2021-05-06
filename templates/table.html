@@ -11,6 +11,19 @@
         <link rel="stylesheet" href="https://cdn.datatables.net/1.10.22/css/dataTables.bootstrap4.min.css">
         <script src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
         <script src="https://cdn.datatables.net/1.10.22/js/dataTables.bootstrap4.min.js"></script>
+        <style>
+            div.dataTables_length {
+                padding-left: 3%;
+            }
+            div.dataTables_filter {
+                padding-right: 3%;
+            }
+            .dataTables_paginate{
+                display: flex;
+                align-items: center;
+                padding-bottom: 1%;
+            }
+         </style>
     </head>
     <body>
         <nav aria-label="breadcrumb">
@@ -57,7 +70,8 @@
                 "pageLength": 100,
                 "language": {
                     url: '//cdn.datatables.net/plug-ins/1.10.24/i18n/Ukrainian.json'
-                }
+                },
+                "info": false
             } );
         } );
         </script>
