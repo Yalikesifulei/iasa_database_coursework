@@ -4,7 +4,7 @@ from db_connect import db
 from queries import queries
 
 
-tables = {'chairs': 'Кафедри', 'faculties': 'Факультети', 'groups': 'Групи', 
+tables = {'faculties': 'Факультети', 'chairs': 'Кафедри', 'groups': 'Групи', 
           'session': 'Сесія','students': 'Студенти', 'subjects': 'Дисципліни', 
           'teachers': 'Викладачі', 'schedule': 'Розклад'}
 
