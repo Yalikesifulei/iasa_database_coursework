@@ -1,11 +1,10 @@
 from flask import Flask, render_template, abort, request
-import pymysql
 from db_connect import db
 from queries import queries
 
 
 tables = {'faculties': 'Факультети', 'chairs': 'Кафедри', 'groups': 'Групи', 
-          'session': 'Сесія','students': 'Студенти', 'subjects': 'Дисципліни', 
+          'session': 'Сесія', 'students': 'Студенти', 'subjects': 'Дисципліни', 
           'teachers': 'Викладачі', 'schedule': 'Розклад'}
 
 app = Flask(__name__)

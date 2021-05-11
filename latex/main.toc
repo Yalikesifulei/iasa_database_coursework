@@ -2,3 +2,6 @@
 \contentsline {likechapter}{\MakeUppercase {Вступ}}{2}{section*.1}%
 \contentsline {chapter}{\numberline {1}Постановка задачі}{3}{chapter.1}%
 \contentsline {chapter}{\numberline {2}Архітектура та інформаційне забезпечення БД}{6}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Аналіз функціонування та організаційні засади підприємства}{6}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Проектування структури бази даних}{6}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Життєві цикли бази даних}{7}{section.2.3}%
