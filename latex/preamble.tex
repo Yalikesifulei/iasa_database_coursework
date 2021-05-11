@@ -7,6 +7,7 @@
 \usepackage{fontspec} 
 \defaultfontfeatures{Ligatures={TeX}} 
 \setmainfont[Ligatures=TeX]{Times New Roman}
+\setmonofont[Mapping=tex-text]{Courier New}
 \usepackage[ukrainian]{babel}
 
 \usepackage{graphicx} % для вставки картинок
@@ -138,3 +139,17 @@
 \hyphenation{СУБД}
 \usepackage[hidelinks]{hyperref}
 \usepackage{microtype}
+
+\usepackage{listings}
+\lstdefinestyle{code}{
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                            
+    numbersep=1pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
