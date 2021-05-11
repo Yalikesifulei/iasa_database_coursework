@@ -13,7 +13,7 @@ def update_config(host, port, user, password):
                       f"\tpassword='{password}',\n",
                       f"\tdatabase='univ_db'\n)"])
 
-# https://stackoverflow.com/a/37501527/5658683
+# https://stackoverflow.com/questions/745538/create-function-through-mysqldb
 def execute_script(fname, db):
     delimiter = ';'
     statement = ""
@@ -67,3 +67,4 @@ if __name__ == '__main__':
         execute_script(f'./queries/task_{i}.sql', db)
     tick = time.time()
     print(f'\tdone in {(tick-tock):.3f} sec')
+    print('database is ready!')
