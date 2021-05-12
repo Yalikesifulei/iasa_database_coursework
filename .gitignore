@@ -4,10 +4,10 @@ kursach.mwb.beforefix
 .gitignore
 kursach.mwb.bak
 .vscode/settings.json
-latex/main.aux
-latex/main.fdb_latexmk
-latex/main.fls
-latex/main.log
-latex/main.synctex.gz
-latex/main.out
-latex/main.toc
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.synctex.gz
+*.out
+*.toc

@@ -38,7 +38,7 @@
 
 \usepackage[tableposition=top]{caption}
 \usepackage{subcaption}
-\DeclareCaptionLabelFormat{gostfigure}{Рис. #2}
+\DeclareCaptionLabelFormat{gostfigure}{Рисунок #2}
 \DeclareCaptionLabelFormat{gosttable}{Табл. #2}
 \DeclareCaptionLabelSeparator{gost}{~--~}
 \captionsetup{labelsep=gost}
@@ -97,14 +97,12 @@
 \renewcommand{\cftchapleader}{\cftdotfill{\cftdotsep}}
 \setcounter{tocdepth}{2} % задать глубину оглавления — до subsection включительно
 
-\newcommand{\empline}{\mbox{}\newline}
 \newcommand{\likechapterheading}[1]{ 
     \begin{center}
     \textbf{\texorpdfstring{\MakeUppercase{#1}}{{#1}}}
     \end{center}}
 
 \makeatletter
-    \renewcommand{\@dotsep}{2}
     \newcommand{\l@likechapter}[2]{{\bfseries\@dottedtocline{0}{0pt}{0pt}{#1}{#2}}}
 \makeatother
 \newcommand{\likechapter}[1]{    
@@ -122,6 +120,7 @@
 \usepackage{microtype}
 
 \usepackage{listings}
+
 \lstdefinestyle{code}{
     basicstyle=\ttfamily\footnotesize,
     breakatwhitespace=false,         
@@ -138,3 +137,11 @@
 \newcommand{\inlinecode}[1]{\texttt{\small #1}}
 
 \usepackage{float}
+
+\newcommand{\append}[1]{
+    \phantomsection
+    \addcontentsline{toc}{section}{#1}
+    \begin{center}
+        \textbf{#1}
+    \end{center}
+}

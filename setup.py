@@ -58,7 +58,7 @@ if __name__ == '__main__':
     execute_script('./inserts/students.sql', db)
     execute_script('./inserts/subjects.sql', db)
     execute_script('./inserts/schedule.sql', db)
-    execute_script('./inserts/session.sql', db)
+    execute_script('./inserts/mega_session.sql', db)
     tick = time.time()
     print(f'\tdone in {(tick-tock):.3f} sec')
     print('creating stored procedures...')

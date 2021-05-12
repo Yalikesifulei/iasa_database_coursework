@@ -1,519 +1,520 @@
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (71,1,'НТ-91','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (71,1,'НТ-91','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (71,1,'НЕ-91','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (71,1,'НЕ-91','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (26,2,'ФА-01','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (26,2,'ФА-01','lab');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (26,2,'ФА-02','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (26,2,'ФА-02','lab');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (26,2,'ФА-03','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (26,2,'ФА-03','lab');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (26,2,'КП-01','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (26,2,'КП-01','lab');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (26,2,'КП-02','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (26,2,'КП-02','lab');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (74,2,'ФА-81','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (74,2,'ФА-81','lab');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (41,2,'ФА-91','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (41,2,'ФА-91','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (41,2,'ФА-91','cw');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (41,2,'ФА-92','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (41,2,'ФА-92','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (41,2,'ФА-92','cw');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (41,2,'ФА-93','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (41,2,'ФА-93','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (41,2,'ФА-93','cw');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (41,2,'КП-91','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (41,2,'КП-91','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (41,2,'КП-91','cw');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (41,2,'КП-92','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (41,2,'КП-92','lab');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (41,2,'КП-92','cw');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (47,2,'ФА-81','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (47,2,'ФА-81','lab');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (47,2,'ФА-83','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (47,2,'ФА-83','lab');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (46,3,'ФА-81','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (46,3,'ФА-81','lab');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (46,3,'ФА-83','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (46,3,'ФА-83','lab');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (65,3,'НТ-01','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (65,3,'НТ-01','lab');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (70,4,'НЕ-01','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (70,4,'НЕ-01','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (2,5,'ФА-01','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (2,5,'ФА-01','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (2,5,'ФА-02','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (2,5,'ФА-02','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (2,5,'ФА-03','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (2,5,'ФА-03','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (2,5,'НО-01','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (2,5,'НО-01','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (2,5,'НТ-01','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (2,5,'НТ-01','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (2,5,'НЕ-01','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (2,5,'НЕ-01','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (33,19,'ФА-81','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (33,19,'ФА-83','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (76,15,'НТ-81','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (33,15,'НТ-81','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (33,15,'НЕ-81','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (34,19,'ФА-71','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (34,19,'ФА-71','lab');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (34,19,'ФА-71','cw');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (34,19,'ФА-73','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (34,19,'ФА-73','lab');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (34,19,'ФА-73','cw');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (34,15,'НТ-71','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (34,15,'НТ-71','lab');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (34,15,'НТ-71','cw');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (34,15,'НЕ-71','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (34,15,'НЕ-71','lab');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (34,15,'НЕ-71','cw');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (15,6,'ФА-01','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (15,6,'ФА-01','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (15,6,'ФА-02','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (15,6,'ФА-02','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (15,6,'ФА-03','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (15,6,'ФА-03','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (15,6,'КП-01','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (15,6,'КП-01','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (15,6,'КП-02','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (15,6,'КП-02','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (16,6,'ФА-01','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (16,6,'ФА-01','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (16,6,'ФА-02','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (16,6,'ФА-02','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (16,6,'ФА-03','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (16,6,'ФА-03','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (16,6,'КП-01','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (16,6,'КП-01','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (16,6,'КП-02','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (16,6,'КП-02','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (17,7,'ФА-01','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (17,7,'ФА-01','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (17,7,'ФА-02','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (17,7,'ФА-02','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (17,7,'ФА-03','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (17,7,'ФА-03','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (17,7,'КП-01','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (17,7,'КП-01','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (17,7,'КП-02','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (17,7,'КП-02','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (17,7,'НТ-01','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (17,7,'НТ-01','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (17,7,'НЕ-01','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (17,7,'НЕ-01','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (18,7,'ФА-01','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (18,7,'ФА-01','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (18,7,'ФА-02','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (18,7,'ФА-02','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (18,7,'ФА-03','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (18,7,'ФА-03','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (21,7,'ФА-91','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (39,7,'ФА-01','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (39,7,'ФА-01','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (39,7,'ФА-02','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (39,7,'ФА-02','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (39,7,'ФА-03','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (39,7,'ФА-03','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (40,7,'ФА-91','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (40,7,'ФА-91','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (40,7,'ФА-92','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (40,7,'ФА-92','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (40,7,'ФА-93','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (40,7,'ФА-93','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (21,8,'КП-91','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (21,8,'КП-91','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (21,8,'КП-92','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (21,8,'КП-92','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (21,8,'НТ-91','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (21,8,'НТ-91','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (21,8,'НЕ-91','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (21,8,'НЕ-91','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (42,8,'КП-91','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (42,8,'КП-91','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (42,8,'КП-92','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (42,8,'КП-92','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (42,8,'НТ-91','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (42,8,'НТ-91','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (42,8,'НЕ-91','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (42,8,'НЕ-91','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (22,8,'КП-91','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (22,8,'КП-91','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (22,8,'КП-92','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (22,8,'КП-92','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (22,8,'НТ-91','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (22,8,'НТ-91','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (22,8,'НЕ-91','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (22,8,'НЕ-91','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (1,10,'ФА-01','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (1,10,'ФА-01','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (1,10,'ФА-02','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (1,10,'ФА-02','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (1,10,'ФА-03','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (1,10,'ФА-03','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (1,10,'КП-01','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (1,10,'КП-01','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (1,10,'КП-02','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (1,10,'КП-02','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (1,10,'НО-01','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (1,10,'НО-01','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (45,11,'КП-81','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (45,11,'КП-81','lab');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (45,11,'КП-82','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (45,11,'КП-82','lab');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (57,12,'ФА-71','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (57,12,'ФА-71','lab');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (57,12,'ФА-73','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (57,12,'ФА-73','lab');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (43,12,'КП-91','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (43,12,'КП-91','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (27,12,'КП-01','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (27,12,'КП-01','lab');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (27,12,'КП-02','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (27,12,'КП-02','lab');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (28,12,'КП-01','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (28,12,'КП-01','lab');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (28,12,'КП-01','cw');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (28,12,'КП-02','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (28,12,'КП-02','lab');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (28,12,'КП-02','cw');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (49,12,'КП-81','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (49,12,'КП-81','lab');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (49,12,'КП-82','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (49,12,'КП-82','lab');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (60,13,'НО-01','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (60,13,'НО-01','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (61,13,'НО-01','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (61,13,'НО-01','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (62,13,'НО-91','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (62,13,'НО-91','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (67,13,'НТ-91','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (67,13,'НТ-91','lab');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (67,13,'НЕ-91','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (67,13,'НЕ-91','lab');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (38,13,'КП-71','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (38,13,'КП-71','lab');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (38,13,'КП-72','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (38,13,'КП-72','lab');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (37,13,'КП-71','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (37,13,'КП-71','lab');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (37,13,'КП-72','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (37,13,'КП-72','lab');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (5,14,'ФА-01','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (5,14,'ФА-02','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (5,14,'ФА-03','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (5,14,'КП-01','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (5,14,'КП-02','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (5,14,'НО-01','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (5,14,'НО-01','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (5,14,'НТ-01','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (5,14,'НЕ-01','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (6,14,'ФА-01','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (6,14,'ФА-02','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (6,14,'ФА-03','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (6,14,'НО-01','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (6,14,'НО-01','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (6,14,'НТ-01','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (6,14,'НЕ-01','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (7,14,'ФА-91','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (7,14,'ФА-92','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (7,14,'ФА-93','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (7,14,'КП-91','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (7,14,'КП-92','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (7,14,'НО-91','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (7,14,'НО-91','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (7,14,'НТ-91','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (7,14,'НЕ-91','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (8,14,'ФА-91','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (8,14,'ФА-92','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (8,14,'ФА-93','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (8,14,'КП-91','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (8,14,'КП-92','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (8,14,'НТ-91','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (8,14,'НЕ-91','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (9,14,'ФА-81','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (9,14,'ФА-83','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (9,14,'КП-81','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (9,14,'КП-82','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (9,14,'НТ-81','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (10,14,'ФА-81','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (10,14,'ФА-83','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (10,14,'КП-81','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (10,14,'КП-82','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (10,14,'НТ-81','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (10,14,'НЕ-81','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (11,14,'ФА-71','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (11,14,'ФА-73','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (11,14,'КП-71','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (11,14,'КП-72','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (11,14,'НТ-71','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (11,14,'НЕ-71','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (73,15,'КП-92','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (73,15,'КП-92','lab');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (73,15,'КП-92','cw');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (48,15,'КП-91','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (48,15,'КП-91','lab');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (77,16,'ФА-91','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (77,16,'ФА-91','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (77,16,'ФА-92','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (77,16,'ФА-92','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (77,16,'ФА-93','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (12,16,'ФА-01','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (12,16,'ФА-01','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (12,16,'ФА-02','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (12,16,'ФА-02','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (12,16,'ФА-03','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (12,16,'ФА-03','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (13,16,'ФА-01','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (13,16,'ФА-01','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (13,16,'ФА-02','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (13,16,'ФА-02','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (13,16,'ФА-03','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (13,16,'ФА-03','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (44,16,'ФА-81','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (31,16,'ФА-81','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (44,16,'ФА-83','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (31,16,'ФА-83','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (25,16,'ФА-81','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (25,16,'ФА-81','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (25,16,'ФА-83','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (25,16,'ФА-83','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (76,17,'НТ-81','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (76,17,'НТ-81','lab');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (76,17,'НЕ-81','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (76,17,'НЕ-81','lab');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (64,17,'КП-71','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (64,17,'КП-71','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (64,17,'КП-72','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (64,17,'КП-72','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (64,17,'НТ-71','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (64,17,'НТ-71','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (64,17,'НЕ-71','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (64,17,'НЕ-71','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (75,17,'КП-92','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (75,17,'КП-92','lab');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (72,17,'КП-81','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (72,17,'КП-81','lab');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (72,17,'КП-82','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (72,17,'КП-82','lab');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (72,17,'НТ-81','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (72,17,'НТ-81','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (21,18,'ФА-91','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (21,18,'ФА-92','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (21,18,'ФА-92','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (21,18,'ФА-93','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (21,18,'ФА-93','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (51,18,'ФА-81','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (51,18,'ФА-81','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (51,18,'ФА-83','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (51,18,'ФА-83','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (78,18,'ФА-91','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (78,18,'ФА-91','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (78,18,'ФА-92','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (78,18,'ФА-92','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (56,19,'ФА-71','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (56,19,'ФА-71','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (56,19,'ФА-73','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (56,19,'ФА-73','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (29,20,'ФА-81','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (29,20,'ФА-81','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (29,20,'ФА-83','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (29,20,'ФА-83','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (30,20,'ФА-81','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (30,20,'ФА-81','lab');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (30,20,'ФА-83','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (30,20,'ФА-83','lab');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (35,20,'ФА-71','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (35,20,'ФА-71','lab');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (35,20,'ФА-73','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (35,20,'ФА-73','lab');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (36,20,'ФА-71','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (36,20,'ФА-71','lab');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (36,20,'ФА-73','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (36,20,'ФА-73','lab');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (69,20,'НТ-81','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (69,20,'НТ-81','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (69,20,'НЕ-81','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (69,20,'НЕ-81','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (14,21,'ФА-91','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (14,21,'ФА-91','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (14,21,'ФА-92','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (14,21,'ФА-92','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (14,21,'ФА-93','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (14,21,'ФА-93','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (14,21,'КП-91','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (14,21,'КП-91','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (14,21,'КП-92','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (14,21,'КП-92','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (14,21,'НТ-91','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (14,21,'НТ-91','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (14,21,'НЕ-91','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (14,21,'НЕ-91','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (58,21,'КП-71','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (58,21,'КП-71','lab');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (58,21,'КП-72','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (58,21,'КП-72','lab');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (77,22,'ФА-93','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (42,22,'ФА-91','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (42,22,'ФА-91','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (42,22,'ФА-92','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (42,22,'ФА-92','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (42,22,'ФА-93','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (42,22,'ФА-93','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (22,22,'ФА-91','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (22,22,'ФА-91','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (22,22,'ФА-92','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (22,22,'ФА-92','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (22,22,'ФА-93','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (22,22,'ФА-93','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (53,23,'КП-81','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (53,23,'КП-81','lab');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (53,23,'КП-82','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (53,23,'КП-82','lab');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (71,24,'КП-91','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (71,24,'КП-91','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (71,24,'КП-92','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (71,24,'КП-92','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (19,24,'ФА-01','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (19,24,'ФА-01','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (19,24,'ФА-02','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (19,24,'ФА-02','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (19,24,'ФА-03','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (19,24,'ФА-03','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (20,24,'ФА-91','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (20,24,'ФА-91','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (20,24,'ФА-92','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (20,24,'ФА-92','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (20,24,'ФА-93','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (20,24,'ФА-93','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (52,26,'ФА-81','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (52,26,'ФА-81','lab');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (52,26,'ФА-83','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (52,26,'ФА-83','lab');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (12,26,'КП-01','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (12,26,'КП-01','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (12,26,'КП-02','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (12,26,'КП-02','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (12,26,'НТ-01','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (12,26,'НТ-01','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (12,26,'НЕ-01','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (12,26,'НЕ-01','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (13,26,'КП-01','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (13,26,'КП-01','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (13,26,'КП-02','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (13,26,'КП-02','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (13,26,'НТ-01','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (13,26,'НТ-01','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (13,26,'НЕ-01','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (13,26,'НЕ-01','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (31,26,'ФА-81','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (31,26,'ФА-81','lab');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (31,26,'ФА-83','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (31,26,'ФА-83','lab');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (32,26,'ФА-81','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (32,26,'ФА-81','lab');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (32,26,'ФА-81','cw');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (32,26,'ФА-83','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (32,26,'ФА-83','lab');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (32,26,'ФА-83','cw');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (63,26,'КП-81','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (63,26,'КП-81','lab');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (63,26,'КП-81','cw');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (63,26,'КП-82','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (63,26,'КП-82','lab');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (63,26,'КП-82','cw');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (27,26,'ФА-01','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (27,26,'ФА-01','lab');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (27,26,'ФА-02','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (27,26,'ФА-02','lab');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (27,26,'ФА-03','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (27,26,'ФА-03','lab');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (28,26,'ФА-01','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (28,26,'ФА-01','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (28,26,'ФА-01','cw');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (28,26,'ФА-02','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (28,26,'ФА-02','lab');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (28,26,'ФА-02','cw');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (28,26,'ФА-03','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (28,26,'ФА-03','lab');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (28,26,'ФА-03','cw');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (23,26,'ФА-91','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (23,26,'ФА-91','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (23,26,'ФА-92','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (23,26,'ФА-92','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (23,26,'ФА-93','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (23,26,'ФА-93','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (24,26,'ФА-81','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (24,26,'ФА-81','lab');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (24,26,'ФА-83','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (24,26,'ФА-83','lab');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (19,27,'КП-01','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (19,27,'КП-01','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (19,27,'КП-02','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (19,27,'КП-02','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (19,27,'НТ-01','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (19,27,'НТ-01','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (19,27,'НЕ-01','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (19,27,'НЕ-01','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (20,27,'КП-91','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (20,27,'КП-91','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (20,27,'КП-92','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (20,27,'КП-92','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (20,27,'НТ-91','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (20,27,'НТ-91','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (20,27,'НЕ-91','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (20,27,'НЕ-91','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (3,28,'ФА-01','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (3,28,'ФА-02','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (3,28,'ФА-03','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (3,28,'КП-01','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (3,28,'КП-02','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (3,28,'НО-01','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (3,28,'НТ-01','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (3,28,'НЕ-01','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (4,28,'ФА-01','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (4,28,'ФА-02','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (4,28,'ФА-03','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (4,28,'НО-01','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (4,28,'НТ-01','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (4,28,'НЕ-01','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (15,29,'НТ-01','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (15,29,'НТ-01','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (15,29,'НЕ-01','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (15,29,'НЕ-01','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (16,29,'НТ-01','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (16,29,'НТ-01','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (16,29,'НЕ-01','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (16,29,'НЕ-01','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (59,29,'НТ-71','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (59,29,'НТ-71','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (59,29,'НТ-71','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (59,29,'НЕ-71','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (66,30,'КП-81','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (66,30,'КП-81','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (66,30,'КП-82','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (66,30,'КП-82','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (66,30,'НТ-81','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (66,30,'НТ-81','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (54,30,'ФА-71','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (54,30,'ФА-71','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (54,30,'ФА-73','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (54,30,'ФА-73','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (50,30,'ФА-81','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (50,30,'ФА-81','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (50,30,'ФА-83','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (50,30,'ФА-83','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (23,30,'КП-91','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (23,30,'КП-91','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (23,30,'КП-92','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (23,30,'КП-92','prac');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (23,30,'НТ-91','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (23,30,'НТ-91','lab');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (23,30,'НЕ-91','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (23,30,'НЕ-91','lab');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (24,30,'КП-81','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (24,30,'КП-81','lab');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (24,30,'КП-82','lec');
-INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES (24,30,'КП-82','lab');
+INSERT INTO schedule(subject_id,teacher_id,group_code,lesson_type) VALUES 
+	(71,1,'НТ-91','lec'),
+	(71,1,'НТ-91','prac'),
+	(71,1,'НЕ-91','lec'),
+	(71,1,'НЕ-91','prac'),
+	(26,2,'ФА-01','lec'),
+	(26,2,'ФА-01','lab'),
+	(26,2,'ФА-02','lec'),
+	(26,2,'ФА-02','lab'),
+	(26,2,'ФА-03','lec'),
+	(26,2,'ФА-03','lab'),
+	(26,2,'КП-01','lec'),
+	(26,2,'КП-01','lab'),
+	(26,2,'КП-02','lec'),
+	(26,2,'КП-02','lab'),
+	(74,2,'ФА-81','lec'),
+	(74,2,'ФА-81','lab'),
+	(41,2,'ФА-91','lec'),
+	(41,2,'ФА-91','prac'),
+	(41,2,'ФА-91','cw'),
+	(41,2,'ФА-92','lec'),
+	(41,2,'ФА-92','prac'),
+	(41,2,'ФА-92','cw'),
+	(41,2,'ФА-93','lec'),
+	(41,2,'ФА-93','prac'),
+	(41,2,'ФА-93','cw'),
+	(41,2,'КП-91','lec'),
+	(41,2,'КП-91','prac'),
+	(41,2,'КП-91','cw'),
+	(41,2,'КП-92','lec'),
+	(41,2,'КП-92','lab'),
+	(41,2,'КП-92','cw'),
+	(47,2,'ФА-81','lec'),
+	(47,2,'ФА-81','lab'),
+	(47,2,'ФА-83','lec'),
+	(47,2,'ФА-83','lab'),
+	(46,3,'ФА-81','lec'),
+	(46,3,'ФА-81','lab'),
+	(46,3,'ФА-83','lec'),
+	(46,3,'ФА-83','lab'),
+	(65,3,'НТ-01','lec'),
+	(65,3,'НТ-01','lab'),
+	(70,4,'НЕ-01','lec'),
+	(70,4,'НЕ-01','prac'),
+	(2,5,'ФА-01','lec'),
+	(2,5,'ФА-01','prac'),
+	(2,5,'ФА-02','lec'),
+	(2,5,'ФА-02','prac'),
+	(2,5,'ФА-03','lec'),
+	(2,5,'ФА-03','prac'),
+	(2,5,'НО-01','lec'),
+	(2,5,'НО-01','prac'),
+	(2,5,'НТ-01','lec'),
+	(2,5,'НТ-01','prac'),
+	(2,5,'НЕ-01','lec'),
+	(2,5,'НЕ-01','prac'),
+	(33,19,'ФА-81','lec'),
+	(33,19,'ФА-83','lec'),
+	(76,15,'НТ-81','prac'),
+	(33,15,'НТ-81','lec'),
+	(33,15,'НЕ-81','lec'),
+	(34,19,'ФА-71','lec'),
+	(34,19,'ФА-71','lab'),
+	(34,19,'ФА-71','cw'),
+	(34,19,'ФА-73','lec'),
+	(34,19,'ФА-73','lab'),
+	(34,19,'ФА-73','cw'),
+	(34,15,'НТ-71','lec'),
+	(34,15,'НТ-71','lab'),
+	(34,15,'НТ-71','cw'),
+	(34,15,'НЕ-71','lec'),
+	(34,15,'НЕ-71','lab'),
+	(34,15,'НЕ-71','cw'),
+	(15,6,'ФА-01','lec'),
+	(15,6,'ФА-01','prac'),
+	(15,6,'ФА-02','lec'),
+	(15,6,'ФА-02','prac'),
+	(15,6,'ФА-03','lec'),
+	(15,6,'ФА-03','prac'),
+	(15,6,'КП-01','lec'),
+	(15,6,'КП-01','prac'),
+	(15,6,'КП-02','lec'),
+	(15,6,'КП-02','prac'),
+	(16,6,'ФА-01','lec'),
+	(16,6,'ФА-01','prac'),
+	(16,6,'ФА-02','lec'),
+	(16,6,'ФА-02','prac'),
+	(16,6,'ФА-03','lec'),
+	(16,6,'ФА-03','prac'),
+	(16,6,'КП-01','lec'),
+	(16,6,'КП-01','prac'),
+	(16,6,'КП-02','lec'),
+	(16,6,'КП-02','prac'),
+	(17,7,'ФА-01','lec'),
+	(17,7,'ФА-01','prac'),
+	(17,7,'ФА-02','lec'),
+	(17,7,'ФА-02','prac'),
+	(17,7,'ФА-03','lec'),
+	(17,7,'ФА-03','prac'),
+	(17,7,'КП-01','lec'),
+	(17,7,'КП-01','prac'),
+	(17,7,'КП-02','lec'),
+	(17,7,'КП-02','prac'),
+	(17,7,'НТ-01','lec'),
+	(17,7,'НТ-01','prac'),
+	(17,7,'НЕ-01','lec'),
+	(17,7,'НЕ-01','prac'),
+	(18,7,'ФА-01','lec'),
+	(18,7,'ФА-01','prac'),
+	(18,7,'ФА-02','lec'),
+	(18,7,'ФА-02','prac'),
+	(18,7,'ФА-03','lec'),
+	(18,7,'ФА-03','prac'),
+	(21,7,'ФА-91','lec'),
+	(39,7,'ФА-01','lec'),
+	(39,7,'ФА-01','prac'),
+	(39,7,'ФА-02','lec'),
+	(39,7,'ФА-02','prac'),
+	(39,7,'ФА-03','lec'),
+	(39,7,'ФА-03','prac'),
+	(40,7,'ФА-91','lec'),
+	(40,7,'ФА-91','prac'),
+	(40,7,'ФА-92','lec'),
+	(40,7,'ФА-92','prac'),
+	(40,7,'ФА-93','lec'),
+	(40,7,'ФА-93','prac'),
+	(21,8,'КП-91','lec'),
+	(21,8,'КП-91','prac'),
+	(21,8,'КП-92','lec'),
+	(21,8,'КП-92','prac'),
+	(21,8,'НТ-91','lec'),
+	(21,8,'НТ-91','prac'),
+	(21,8,'НЕ-91','lec'),
+	(21,8,'НЕ-91','prac'),
+	(42,8,'КП-91','lec'),
+	(42,8,'КП-91','prac'),
+	(42,8,'КП-92','lec'),
+	(42,8,'КП-92','prac'),
+	(42,8,'НТ-91','lec'),
+	(42,8,'НТ-91','prac'),
+	(42,8,'НЕ-91','lec'),
+	(42,8,'НЕ-91','prac'),
+	(22,8,'КП-91','lec'),
+	(22,8,'КП-91','prac'),
+	(22,8,'КП-92','lec'),
+	(22,8,'КП-92','prac'),
+	(22,8,'НТ-91','lec'),
+	(22,8,'НТ-91','prac'),
+	(22,8,'НЕ-91','lec'),
+	(22,8,'НЕ-91','prac'),
+	(1,10,'ФА-01','lec'),
+	(1,10,'ФА-01','prac'),
+	(1,10,'ФА-02','lec'),
+	(1,10,'ФА-02','prac'),
+	(1,10,'ФА-03','lec'),
+	(1,10,'ФА-03','prac'),
+	(1,10,'КП-01','lec'),
+	(1,10,'КП-01','prac'),
+	(1,10,'КП-02','lec'),
+	(1,10,'КП-02','prac'),
+	(1,10,'НО-01','lec'),
+	(1,10,'НО-01','prac'),
+	(45,11,'КП-81','lec'),
+	(45,11,'КП-81','lab'),
+	(45,11,'КП-82','lec'),
+	(45,11,'КП-82','lab'),
+	(57,12,'ФА-71','lec'),
+	(57,12,'ФА-71','lab'),
+	(57,12,'ФА-73','lec'),
+	(57,12,'ФА-73','lab'),
+	(43,12,'КП-91','lec'),
+	(43,12,'КП-91','prac'),
+	(27,12,'КП-01','lec'),
+	(27,12,'КП-01','lab'),
+	(27,12,'КП-02','lec'),
+	(27,12,'КП-02','lab'),
+	(28,12,'КП-01','lec'),
+	(28,12,'КП-01','lab'),
+	(28,12,'КП-01','cw'),
+	(28,12,'КП-02','lec'),
+	(28,12,'КП-02','lab'),
+	(28,12,'КП-02','cw'),
+	(49,12,'КП-81','lec'),
+	(49,12,'КП-81','lab'),
+	(49,12,'КП-82','lec'),
+	(49,12,'КП-82','lab'),
+	(60,13,'НО-01','lec'),
+	(60,13,'НО-01','prac'),
+	(61,13,'НО-01','lec'),
+	(61,13,'НО-01','prac'),
+	(62,13,'НО-91','prac'),
+	(62,13,'НО-91','lec'),
+	(67,13,'НТ-91','lec'),
+	(67,13,'НТ-91','lab'),
+	(67,13,'НЕ-91','lec'),
+	(67,13,'НЕ-91','lab'),
+	(38,13,'КП-71','lec'),
+	(38,13,'КП-71','lab'),
+	(38,13,'КП-72','lec'),
+	(38,13,'КП-72','lab'),
+	(37,13,'КП-71','lec'),
+	(37,13,'КП-71','lab'),
+	(37,13,'КП-72','lec'),
+	(37,13,'КП-72','lab'),
+	(5,14,'ФА-01','prac'),
+	(5,14,'ФА-02','prac'),
+	(5,14,'ФА-03','prac'),
+	(5,14,'КП-01','prac'),
+	(5,14,'КП-02','prac'),
+	(5,14,'НО-01','lec'),
+	(5,14,'НО-01','prac'),
+	(5,14,'НТ-01','prac'),
+	(5,14,'НЕ-01','prac'),
+	(6,14,'ФА-01','prac'),
+	(6,14,'ФА-02','prac'),
+	(6,14,'ФА-03','prac'),
+	(6,14,'НО-01','lec'),
+	(6,14,'НО-01','prac'),
+	(6,14,'НТ-01','prac'),
+	(6,14,'НЕ-01','prac'),
+	(7,14,'ФА-91','lec'),
+	(7,14,'ФА-92','lec'),
+	(7,14,'ФА-93','lec'),
+	(7,14,'КП-91','prac'),
+	(7,14,'КП-92','prac'),
+	(7,14,'НО-91','prac'),
+	(7,14,'НО-91','lec'),
+	(7,14,'НТ-91','prac'),
+	(7,14,'НЕ-91','prac'),
+	(8,14,'ФА-91','prac'),
+	(8,14,'ФА-92','prac'),
+	(8,14,'ФА-93','prac'),
+	(8,14,'КП-91','prac'),
+	(8,14,'КП-92','prac'),
+	(8,14,'НТ-91','prac'),
+	(8,14,'НЕ-91','prac'),
+	(9,14,'ФА-81','prac'),
+	(9,14,'ФА-83','prac'),
+	(9,14,'КП-81','prac'),
+	(9,14,'КП-82','prac'),
+	(9,14,'НТ-81','prac'),
+	(10,14,'ФА-81','prac'),
+	(10,14,'ФА-83','prac'),
+	(10,14,'КП-81','prac'),
+	(10,14,'КП-82','prac'),
+	(10,14,'НТ-81','prac'),
+	(10,14,'НЕ-81','prac'),
+	(11,14,'ФА-71','prac'),
+	(11,14,'ФА-73','prac'),
+	(11,14,'КП-71','prac'),
+	(11,14,'КП-72','prac'),
+	(11,14,'НТ-71','prac'),
+	(11,14,'НЕ-71','prac'),
+	(73,15,'КП-92','lec'),
+	(73,15,'КП-92','lab'),
+	(73,15,'КП-92','cw'),
+	(48,15,'КП-91','lec'),
+	(48,15,'КП-91','lab'),
+	(77,16,'ФА-91','lec'),
+	(77,16,'ФА-91','prac'),
+	(77,16,'ФА-92','lec'),
+	(77,16,'ФА-92','prac'),
+	(77,16,'ФА-93','lec'),
+	(12,16,'ФА-01','lec'),
+	(12,16,'ФА-01','prac'),
+	(12,16,'ФА-02','lec'),
+	(12,16,'ФА-02','prac'),
+	(12,16,'ФА-03','lec'),
+	(12,16,'ФА-03','prac'),
+	(13,16,'ФА-01','lec'),
+	(13,16,'ФА-01','prac'),
+	(13,16,'ФА-02','lec'),
+	(13,16,'ФА-02','prac'),
+	(13,16,'ФА-03','lec'),
+	(13,16,'ФА-03','prac'),
+	(44,16,'ФА-81','lec'),
+	(31,16,'ФА-81','prac'),
+	(44,16,'ФА-83','lec'),
+	(31,16,'ФА-83','prac'),
+	(25,16,'ФА-81','lec'),
+	(25,16,'ФА-81','prac'),
+	(25,16,'ФА-83','lec'),
+	(25,16,'ФА-83','prac'),
+	(76,17,'НТ-81','lec'),
+	(76,17,'НТ-81','lab'),
+	(76,17,'НЕ-81','lec'),
+	(76,17,'НЕ-81','lab'),
+	(64,17,'КП-71','lec'),
+	(64,17,'КП-71','prac'),
+	(64,17,'КП-72','lec'),
+	(64,17,'КП-72','prac'),
+	(64,17,'НТ-71','lec'),
+	(64,17,'НТ-71','prac'),
+	(64,17,'НЕ-71','lec'),
+	(64,17,'НЕ-71','prac'),
+	(75,17,'КП-92','lec'),
+	(75,17,'КП-92','lab'),
+	(72,17,'КП-81','lec'),
+	(72,17,'КП-81','lab'),
+	(72,17,'КП-82','lec'),
+	(72,17,'КП-82','lab'),
+	(72,17,'НТ-81','lec'),
+	(72,17,'НТ-81','prac'),
+	(21,18,'ФА-91','prac'),
+	(21,18,'ФА-92','lec'),
+	(21,18,'ФА-92','prac'),
+	(21,18,'ФА-93','lec'),
+	(21,18,'ФА-93','prac'),
+	(51,18,'ФА-81','lec'),
+	(51,18,'ФА-81','prac'),
+	(51,18,'ФА-83','lec'),
+	(51,18,'ФА-83','prac'),
+	(78,18,'ФА-91','lec'),
+	(78,18,'ФА-91','prac'),
+	(78,18,'ФА-92','lec'),
+	(78,18,'ФА-92','prac'),
+	(56,19,'ФА-71','lec'),
+	(56,19,'ФА-71','prac'),
+	(56,19,'ФА-73','lec'),
+	(56,19,'ФА-73','prac'),
+	(29,20,'ФА-81','lec'),
+	(29,20,'ФА-81','prac'),
+	(29,20,'ФА-83','lec'),
+	(29,20,'ФА-83','prac'),
+	(30,20,'ФА-81','lec'),
+	(30,20,'ФА-81','lab'),
+	(30,20,'ФА-83','lec'),
+	(30,20,'ФА-83','lab'),
+	(35,20,'ФА-71','lec'),
+	(35,20,'ФА-71','lab'),
+	(35,20,'ФА-73','lec'),
+	(35,20,'ФА-73','lab'),
+	(36,20,'ФА-71','lec'),
+	(36,20,'ФА-71','lab'),
+	(36,20,'ФА-73','lec'),
+	(36,20,'ФА-73','lab'),
+	(69,20,'НТ-81','lec'),
+	(69,20,'НТ-81','prac'),
+	(69,20,'НЕ-81','lec'),
+	(69,20,'НЕ-81','prac'),
+	(14,21,'ФА-91','lec'),
+	(14,21,'ФА-91','prac'),
+	(14,21,'ФА-92','lec'),
+	(14,21,'ФА-92','prac'),
+	(14,21,'ФА-93','lec'),
+	(14,21,'ФА-93','prac'),
+	(14,21,'КП-91','lec'),
+	(14,21,'КП-91','prac'),
+	(14,21,'КП-92','lec'),
+	(14,21,'КП-92','prac'),
+	(14,21,'НТ-91','lec'),
+	(14,21,'НТ-91','prac'),
+	(14,21,'НЕ-91','lec'),
+	(14,21,'НЕ-91','prac'),
+	(58,21,'КП-71','lec'),
+	(58,21,'КП-71','lab'),
+	(58,21,'КП-72','lec'),
+	(58,21,'КП-72','lab'),
+	(77,22,'ФА-93','prac'),
+	(42,22,'ФА-91','lec'),
+	(42,22,'ФА-91','prac'),
+	(42,22,'ФА-92','lec'),
+	(42,22,'ФА-92','prac'),
+	(42,22,'ФА-93','lec'),
+	(42,22,'ФА-93','prac'),
+	(22,22,'ФА-91','lec'),
+	(22,22,'ФА-91','prac'),
+	(22,22,'ФА-92','lec'),
+	(22,22,'ФА-92','prac'),
+	(22,22,'ФА-93','lec'),
+	(22,22,'ФА-93','prac'),
+	(53,23,'КП-81','lec'),
+	(53,23,'КП-81','lab'),
+	(53,23,'КП-82','lec'),
+	(53,23,'КП-82','lab'),
+	(71,24,'КП-91','lec'),
+	(71,24,'КП-91','prac'),
+	(71,24,'КП-92','lec'),
+	(71,24,'КП-92','prac'),
+	(19,24,'ФА-01','lec'),
+	(19,24,'ФА-01','prac'),
+	(19,24,'ФА-02','lec'),
+	(19,24,'ФА-02','prac'),
+	(19,24,'ФА-03','lec'),
+	(19,24,'ФА-03','prac'),
+	(20,24,'ФА-91','lec'),
+	(20,24,'ФА-91','prac'),
+	(20,24,'ФА-92','lec'),
+	(20,24,'ФА-92','prac'),
+	(20,24,'ФА-93','lec'),
+	(20,24,'ФА-93','prac'),
+	(52,26,'ФА-81','lec'),
+	(52,26,'ФА-81','lab'),
+	(52,26,'ФА-83','lec'),
+	(52,26,'ФА-83','lab'),
+	(12,26,'КП-01','lec'),
+	(12,26,'КП-01','prac'),
+	(12,26,'КП-02','lec'),
+	(12,26,'КП-02','prac'),
+	(12,26,'НТ-01','lec'),
+	(12,26,'НТ-01','prac'),
+	(12,26,'НЕ-01','lec'),
+	(12,26,'НЕ-01','prac'),
+	(13,26,'КП-01','lec'),
+	(13,26,'КП-01','prac'),
+	(13,26,'КП-02','lec'),
+	(13,26,'КП-02','prac'),
+	(13,26,'НТ-01','lec'),
+	(13,26,'НТ-01','prac'),
+	(13,26,'НЕ-01','lec'),
+	(13,26,'НЕ-01','prac'),
+	(31,26,'ФА-81','lec'),
+	(31,26,'ФА-81','lab'),
+	(31,26,'ФА-83','lec'),
+	(31,26,'ФА-83','lab'),
+	(32,26,'ФА-81','lec'),
+	(32,26,'ФА-81','lab'),
+	(32,26,'ФА-81','cw'),
+	(32,26,'ФА-83','lec'),
+	(32,26,'ФА-83','lab'),
+	(32,26,'ФА-83','cw'),
+	(63,26,'КП-81','lec'),
+	(63,26,'КП-81','lab'),
+	(63,26,'КП-81','cw'),
+	(63,26,'КП-82','lec'),
+	(63,26,'КП-82','lab'),
+	(63,26,'КП-82','cw'),
+	(27,26,'ФА-01','lec'),
+	(27,26,'ФА-01','lab'),
+	(27,26,'ФА-02','lec'),
+	(27,26,'ФА-02','lab'),
+	(27,26,'ФА-03','lec'),
+	(27,26,'ФА-03','lab'),
+	(28,26,'ФА-01','lec'),
+	(28,26,'ФА-01','prac'),
+	(28,26,'ФА-01','cw'),
+	(28,26,'ФА-02','lec'),
+	(28,26,'ФА-02','lab'),
+	(28,26,'ФА-02','cw'),
+	(28,26,'ФА-03','lec'),
+	(28,26,'ФА-03','lab'),
+	(28,26,'ФА-03','cw'),
+	(23,26,'ФА-91','lec'),
+	(23,26,'ФА-91','prac'),
+	(23,26,'ФА-92','lec'),
+	(23,26,'ФА-92','prac'),
+	(23,26,'ФА-93','lec'),
+	(23,26,'ФА-93','prac'),
+	(24,26,'ФА-81','lec'),
+	(24,26,'ФА-81','lab'),
+	(24,26,'ФА-83','lec'),
+	(24,26,'ФА-83','lab'),
+	(19,27,'КП-01','lec'),
+	(19,27,'КП-01','prac'),
+	(19,27,'КП-02','lec'),
+	(19,27,'КП-02','prac'),
+	(19,27,'НТ-01','lec'),
+	(19,27,'НТ-01','prac'),
+	(19,27,'НЕ-01','lec'),
+	(19,27,'НЕ-01','prac'),
+	(20,27,'КП-91','lec'),
+	(20,27,'КП-91','prac'),
+	(20,27,'КП-92','lec'),
+	(20,27,'КП-92','prac'),
+	(20,27,'НТ-91','lec'),
+	(20,27,'НТ-91','prac'),
+	(20,27,'НЕ-91','lec'),
+	(20,27,'НЕ-91','prac'),
+	(3,28,'ФА-01','prac'),
+	(3,28,'ФА-02','prac'),
+	(3,28,'ФА-03','prac'),
+	(3,28,'КП-01','prac'),
+	(3,28,'КП-02','prac'),
+	(3,28,'НО-01','prac'),
+	(3,28,'НТ-01','prac'),
+	(3,28,'НЕ-01','prac'),
+	(4,28,'ФА-01','prac'),
+	(4,28,'ФА-02','prac'),
+	(4,28,'ФА-03','prac'),
+	(4,28,'НО-01','prac'),
+	(4,28,'НТ-01','prac'),
+	(4,28,'НЕ-01','prac'),
+	(15,29,'НТ-01','lec'),
+	(15,29,'НТ-01','prac'),
+	(15,29,'НЕ-01','lec'),
+	(15,29,'НЕ-01','prac'),
+	(16,29,'НТ-01','lec'),
+	(16,29,'НТ-01','prac'),
+	(16,29,'НЕ-01','lec'),
+	(16,29,'НЕ-01','prac'),
+	(59,29,'НТ-71','lec'),
+	(59,29,'НТ-71','prac'),
+	(59,29,'НТ-71','lec'),
+	(59,29,'НЕ-71','prac'),
+	(66,30,'КП-81','lec'),
+	(66,30,'КП-81','prac'),
+	(66,30,'КП-82','lec'),
+	(66,30,'КП-82','prac'),
+	(66,30,'НТ-81','lec'),
+	(66,30,'НТ-81','prac'),
+	(54,30,'ФА-71','lec'),
+	(54,30,'ФА-71','prac'),
+	(54,30,'ФА-73','lec'),
+	(54,30,'ФА-73','prac'),
+	(50,30,'ФА-81','lec'),
+	(50,30,'ФА-81','prac'),
+	(50,30,'ФА-83','lec'),
+	(50,30,'ФА-83','prac'),
+	(23,30,'КП-91','lec'),
+	(23,30,'КП-91','prac'),
+	(23,30,'КП-92','lec'),
+	(23,30,'КП-92','prac'),
+	(23,30,'НТ-91','lec'),
+	(23,30,'НТ-91','lab'),
+	(23,30,'НЕ-91','lec'),
+	(23,30,'НЕ-91','lab'),
+	(24,30,'КП-81','lec'),
+	(24,30,'КП-81','lab'),
+	(24,30,'КП-82','lec'),
+	(24,30,'КП-82','lab');
