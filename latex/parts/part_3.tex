@@ -83,9 +83,11 @@ end if;
 
 \section{Випробування розроблених програм}
 Було перевірено роботу усіх 13 запитів, які необхідно було реалізувати.
-Підписи відповідно до нумерації запитів на ст. \pageref{task_list}
+Підписи відповідно до нумерації запитів на ст. \pageref{task_list}.
+
 \makeatletter
 \@for\num:={1,2,3,4,5,6,7,8,9,10,11,12,13}\do{
+        \num. \input{query_descr/\num.txt}
         \begin{figure}[H]
                 \centering
                 \includegraphics[scale=0.36]{pics/task_\num.png}
